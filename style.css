@@ -4,7 +4,7 @@
     padding: 0;
     
     font-family: 'Courier New', Courier, monospace;
-    color: antiquewhite;
+    color: rgb(104, 103, 102);
 
 }
 body{
@@ -13,7 +13,7 @@ body{
 }
 
 .interface{
-    max-width:1024px;
+    max-width:1224px;
     margin: 0 auto;
     
 }
@@ -26,6 +26,8 @@ body{
     color: antiquewhite;
     font-size: 2rem;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .titulo strong{
     color: aqua;
@@ -61,7 +63,7 @@ header a{
     border-radius: 25px;
 }
 .menu_desktop li a:hover{
-    transition: .5s;
+    transition: .5s ease-in-out ease-in;
     background-color: aqua;
     transform: scale(1.05);
     color: black;
@@ -85,7 +87,7 @@ header ul{
 }
 
 .btn_contatos button:hover{
-    transition: .3s;
+    transition: .3s ease-in-out ease-in;
     background-color: aqua;
     transform: scale(1.05);
     color: black;
@@ -117,7 +119,7 @@ main{
     margin-top:40px ;
 }
 .img_label img{
-    border-radius: 50%;
+    border-radius: 25%;
     width: 350px;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -144,7 +146,7 @@ main{
 } */
 .projetos{
     max-width: 300px;
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
 }
@@ -156,22 +158,134 @@ main{
    border-radius: 25px;
 }
 .projetos:hover{
-    box-shadow: 0 0 19px rgba(250, 235, 215, 0.363);
+    box-shadow: 0 0 20px rgba(250, 235, 215, 0.363);
     transform: scale(1.05);
-    transition: 0.5s;
+    transition: 0.5s ease-in-out ease-in;
 }
 
 
 .projetos i{
     font-size: 5rem;
     color: aqua;
+    
 }
 .projetos h3{
     font-size: 2rem;
-    margin: 15 0;
+    color: antiquewhite;
     margin: 15px 0;
 }
 .projetos p{
     text-align: center;
+
+}
+.sobre {
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 40px;
+    
+}
+.sobre.titulo{
+    margin-bottom: 20px;
+}
+.sobre .flexivel{
+    margin-top: 40px;
+    
+}
+.sobre .img_sobre img{
+    border-radius: 40px;
+    
+}
+.img_sobre{
+    
+    border-radius: 40px;
+}
+.sobre img:hover{
+    box-shadow: 0 0 20px rgba(250, 235, 215, 0.363);
+    transform: scale(1.01);
+    transition: 0.5s ease-in-out ease-in;
+}
+.sobre abbr{
+    cursor: pointer;
+    color: aqua;
+    font-weight: 900;
+}
+
+.sobre .text_sobre h3{
+    margin-bottom:  40px ;
+    color: antiquewhite;
+}
+
+.deploy{
+    justify-content: space-around;
+    
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(250, 235, 215, 0.167);
+}
+.deploy .titulo{
+    padding-top: -80px;
+}
+.img_port{
+    width: 360px;
+    height: 260px;
+    background-size: cover;
+    background-position: 100% 0%;
+    margin-top: 40px;
+    border-radius: 40px;
+    transition: 5s;
+    cursor: pointer;
+    position: relative;
+}
+.img_port:hover{
+    background-position: 100% 100%;
+    transition:  5s ease-in-out ease-in;
+    transform: scale(1.05);
+}
+.over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: rgba(49, 50, 50, 0.346);
+    color:antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+.over:hover{
+    opacity: 1;
+    transition:  5s ease-in-out ease-in;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px 10px rgba(250, 235, 215, 0.167);
+}
+.flexivel ul li{
+   list-style: none;
+}
+
+.icon a{
+  text-decoration: none;
+  color:  rgb(207, 206, 206);
+  font-size: 1.1rem;
+  padding: 10px;
+}
+.icon i{font-size: 1.5rem;
+    padding: 10px;
+}
+.icon:hover{
+    transition:  5s ease-in-out ease-in;
+    transform: scale(1.02);
+    color: antiquewhite;
+    font-weight: 900;
+}
+footer p{
+    text-align: center;
+    margin-top: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: .8rem;
 
 }
