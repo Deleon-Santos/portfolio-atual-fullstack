@@ -1,4 +1,7 @@
 /*  geral*/
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -350,13 +353,18 @@ button.hide-btn:hover {
 }
 /* inicio de seção footer */
 
-footer hr{
+.borda{
+    border-top: 1 solid rgba(32, 16, 92, 0);
     padding: 0px 4%;
-    color: rgba(32, 16, 92, 0);
+
+    
+}
+footer{
     box-shadow: 0 0 10px 10px rgba(237, 237, 237, 0.144);
 }
 footer .titulo{
     padding-top: 40px;
+    
 }
 footer p{
     text-align: center;
@@ -366,39 +374,76 @@ footer p{
     font-size: .8rem;
 
 }
-@media screen and (max-width: 900px) {
+.footer .flexivel{
+    gap: 300px;
+    justify-content: space-between ;
+    
+}
+.esquerda{
+    text-align: right;
+}
+@media screen and (max-width: 960px) {
     header{
-        padding: 5px 4%;
+        padding: 10px 8%;
     }
-    .interface{ max-width: 548 px;
-                padding: 1px 4%;
-                margin-top: 0px;
+    .menu_desktop , .btn_contatos{
+        display:none;
+    }
+    
+    
+    .interface{ 
+        max-width: 548 px;
+        padding: 30px 8%;
+        margin-top: 0px;
+    }
+    .corpo {
+        padding: 30px;
     }
     .flexivel{
         flex-direction: column;
     }
+    
     .corpo .flexivel{
         flex-direction: column-reverse;
+        gap: 45px;
     }
+    /* .corpo{
+        padding: 30px 0%;
+    } */
     .corpo h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
     }
     .corpo p{
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         text-align: center;
     }
     .corpo img{
-        width: 250px;
+        width: 350px;
+        
+        
     }
     .interface .titulo{
 
         text-align: center;
     }
+    .sobre img{
+        width: 350px;
+    }
     .skills .flexivel{
         
-        display: flex;
-        flex-grow:;
         
+    
     }
+    .footer .interface{
+        padding: 0 8%;
+    }  
+    .footer .flexivel{
+        gap: 100px;
+        flex-direction: row; 
+    }
+    .footer .icon a{
+        font-size: .8rem;
+    }
+    
  }
