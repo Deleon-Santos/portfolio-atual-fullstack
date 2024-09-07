@@ -5,114 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Desenvolvedor ">
     <title>Deleon Santos</title>
-    <link rel="shortcut icon" href="favicon-curriculo-vitae.jpg" type="image/x-icon">
+    
+    <!--Link de favicon -->
+    <link rel="shortcut icon" href="imagem/favicon-curriculo-vitae.jpg" type="image/x-icon">
+    
+    <!-- Link para biblioteca de icones -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
+</head><!--  fim head -->
+<!--  -->
 <body>
-    <header>
-        <div class="interface" id="home">
-            <div class="logo">
+    <header class= cabeca > 
+        <div class="interface" > <!-- inicio de inteface -->
+            <div class="logo" >
                 <a href="#">
                     <p>DS</p>
                 </a>
             </div>
-            <nav class="menu_desktop">
+            <nav class="menu_desktop" ><!-- inicio de navegação para desctop -->
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#sobre-mim">Sobre mim</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
                 </ul>
-            </nav>
-            <div class="btn_contatos">
-                <a href="#">
+            </nav><!--  fim descktop-->
+            <div class="btn_contatos" >
+                <a href="imagem/curriculoEestagio.pdf">
                     <button>CV</button>
                 </a>
             </div>
-        </div>
-    </header>
+        </div><!-- fim interface -->
+    </header><!-- fim da seção header-->
     <main>
-        <section class="corpo">
+        <section class="corpo" id="home" >
             <div class="interface">
                 <div class="flexivel">
                     <div class="label">
                         <h1>Hello World!👋 <br>Eu sou<strong> Deleon Santos! </strong></h1>
-                        <p>   
-                            Desenvolvedor fullstack mergulhado no mundo da programação e amante de tecnologia.     
-                        </p> 
+                        <p>Desenvolvedor fullstack mergulhado no mundo da programação e amante de tecnologia.</p>     
                     </div>
+
                     <div class="img_label">
                         <img src="imagem/img_capa.png" alt="imagem de portifolio">
-
                     </div>
                 </div>
-            </div>
-        </section>
+            </div><!--fim de interface-->
+        </section><!--fim da seção corpo-->
 
-        <section class="desenvolvimento">
-            <div class="interface">
-                <h2 class="titulo">Meus <strong>Projetos</strong></h2>
-                <div class="flexivel">
-                    <div class="projetos">
-                        <i class="fa-solid fa-globe"></i>
-                        <h3>Deploy</h3>
-                        <p>Aplicações desenvolvidas utilizandos HTML, CSS e JavaScript</p>
-                    </div>
-                    <div class="projetos">
-                        <i class="fa-brands fa-python"></i>
-                        <h3>Interface</h3>
-                        <p>Aplicações desenvolvidas em Python baseadas em  interface grafica </p>
-                    </div>
-                    <div class="projetos">
-                        <i class="fa-brands fa-python"></i>
-                        <h3>Console</h3>
-                        <p>Aplicações back-End desenvolvidas baseadas em linhas de comando </p>
-                    </div>
-                
-                </div>
-            </div>
-        </section>
-
-        <section class="sobre">
+        <section class="sobre" id="sobre-mim">
             <div class="interface">
                 <h2 class="titulo">Quem <strong>Sou</strong></h2>
                 <div class="flexivel">
                     <div class="img_sobre">
-                        <img src="SAVE.png" alt="">
+                        <img src="imagem/SAVE.png" alt="">
                     </div>
+
                     <div class="text_sobre">
-                        
                         <h3>Olá, Podem me chamar de Leon, sou desenvolvedor fullstack, estudante e amante de tecnologias.</h3>
                         <p>Eu Gosto de viagens e passeios com familiares e amigos, gosto de compartilhar conquistas e emoções que dão significado a vida.
                             Encaro os desafios com otimismo mantendo uma rotina equilibrada entre responsabilidade, trabalho e lazer. <br><br>
                             Venho do varejo onde atuel por 15 anos e nessa epoca passei no meu primeiro vestibular para cursar Basharel em Sistemas de Informação na UfsCar.<br><br>
-                            Por questões diversas aquela jornada precisou ser adiado mas a paixao por tecnologia me catapultou para a trilha de <abbr title="Analise e Desenvolvimento de Sistemas">ADS</abbr>.
-                            
-                            <br>
-                     </p>
+                            Por questões diversas aquela jornada precisou ser adiado mas a paixao por tecnologia me catapultou para a trilha de <abbr title="Analise e Desenvolvimento de Sistemas">ADS</abbr>.<br>      
+                        </p>
                     </div>
-                    
-                
                 </div>
             </div>
-        </section>
+        </section><!--fim da seção sobre-->
 
-        <section class="deploy">
+        <section class="desenvolvimento" id="projetos">
+            <div class="interface">
+                <h2 class="titulo">Meus <strong>Projetos</strong></h2>
+                <div class="flexivel">
+                    <div class="projetos" data-target="deploy" >
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>Deploy</h3>
+                        <p>Aplicações desenvolvidas utilizandos HTML, CSS e JavaScript</p>
+                    </div>
+                    <div class="projetos" data-target="descktop">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Interface</h3>
+                        <p>Aplicações desenvolvidas em Python baseadas em  interface grafica </p>
+                    </div>
+                    <div class="projetos" data-target="console">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Console</h3>
+                        <p>Aplicações back-End desenvolvidas baseadas em linhas de comando </p>
+                    </div>
+                </div><!--fim da classe flexivel-->
+            </div><!--fim de interface-->
+        </section><!--fim da classe desenvovimento-->
+
+        <section class="oculta" id="deploy" >
             <div class="interface">          
-                <h2 class="titulo">Dep<strong>loy</strong></h2>
+                <h2 class="titulo">Dep<strong>loy</strong></h2>  
                 <div class="flexivel">
                     <div class="img_port" style="background-image: url(imagem/android.png);"><div class="over">Site Android</div></div>
                     <div class="img_port" style="background-image: url(imagem/calculadora.png);"><div class="over">Calculadora</div></div>
                     <div class="img_port" style="background-image: url(imagem/portfolio.png);"><div class="over">Portfolio</div></div>
-                </div>
+                </div><!--fim de interface-->
+                 <button class="hide-btn">Voltar</button>
             </div>
         </section>
+
+        <section class="oculta" id="descktop">
+            <div class="interface">          
+                <h2 class="titulo">Desk<strong>top</strong></h2>
+                <div class="flexivel">
+                    <div class="img_port" style="background-image: url(imagem/android.png);"><div class="over">Site Android</div></div>
+                    <div class="img_port" style="background-image: url(imagem/calculadora.png);"><div class="over">Calculadora</div></div>
+                    <div class="img_port" style="background-image: url(imagem/portfolio.png);"><div class="over">Portfolio</div></div>
+                </div><!--fim de interface-->
+                <button class="hide-btn">Esconder</button>
+            </div>
+        </section>
+
+        <section class="oculta" id="console">
+            <div class="interface">          
+                <h2 class="titulo">Con<strong>sole</strong></h2>
+                <div class="flexivel">
+                    <div class="img_port" style="background-image: url(imagem/android.png);"><div class="over">Site Android</div></div>
+                    <div class="img_port" style="background-image: url(imagem/calculadora.png);"><div class="over">Calculadora</div></div>
+                    <div class="img_port" style="background-image: url(imagem/portfolio.png);"><div class="over">Portfolio</div></div>
+                </div><!--fim de interface-->
+                <button class="hide-btn" >Esconder</button>
+            </div>
+        </section>
+
+        <section class="skills" id="habilidades" >
+            <div class="interface">
+                <h2 class="titulo">Habili<strong>dades</strong></h2>
+                
+                <div class='flexivel'>
+                    <div class="projetos">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML</h3>  
+                    </div>
+
+                    <div class="projetos">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS</h3>  
+                    </div> 
+
+                    <div class="projetos"> 
+                        <i class="fa-brands fa-js"></i>
+                        <h3>JAVASCRIPT</h3>  
+                    </div>
+
+                    <div class="projetos">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>PYTHON</h3>  
+                    </div>
+                    <div class="projetos">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>DATABASE</h3>  
+                    </div>
+                </div>
+            </div>
+                
+                
+        </section>
     </main>
+    
     <footer class="footer">
+        <hr>
         <h2 class="titulo">Redes e <strong>Contatos</strong></h3>
         <div class=" interface">
             <div class="flexivel">
@@ -139,12 +197,13 @@
             <div>
                 <p>&copy 2024 - Deleon Santos</p>
             </div>
-        </div>
+        </div><!--fim de interface-->
 
         
 
         
         
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

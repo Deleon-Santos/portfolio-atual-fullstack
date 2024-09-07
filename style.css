@@ -14,9 +14,9 @@ body{
 
 .interface{
     max-width:1224px;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
+
 
 .flexivel{
     display: flex;
@@ -32,13 +32,41 @@ body{
 .titulo strong{
     color: aqua;
 }
+
+.projetos{
+    max-width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+   border-radius: 25px;
+}
+
+.projetos:hover{
+    box-shadow: 0 0 20px rgba(250, 235, 215, 0.363);
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out ease-in;
+}
 /*  geral-  o atalho pra gerar um  comentario precione "CTRl" + ";"*/ 
 
 header{
-    padding: 40px 4%; /*  estou fazendo um espaço na margen superior de 40px e 4% das laterais*/
-    margin: auto;
-    align-items:center ;
+    padding: 40px 0%; /*  estou fazendo um espaço na margen superior de 40px e 4% das laterais*/
+    margin: auto ;
+    align-items:center;
+    margin-bottom: 40px;
+    background-color: black;
 }
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease; /* Suaviza o movimento do header */
+}
+
 .logo p{
     color: rgb(10, 247, 235);
     font-size: 3rem;
@@ -46,6 +74,7 @@ header{
 }
 /* alinhar os elementos de header */
  header .interface  {
+    padding: 0px 4%;
     display: flex;
     align-items:center;
     justify-content:space-between;  
@@ -53,7 +82,7 @@ header{
 header a{
     display: inline-block;
 }
- .menu_desktop li a{
+.menu_desktop li a{
     text-decoration: none;
     color: rgb(104, 103, 102);
     font-size: 1rem;
@@ -94,8 +123,12 @@ header ul{
     
 }
 main{
-    padding: 40px 4%;
     
+    margin-top: 100px;
+    
+}
+.corpo{
+    padding: 150px 4% 
 }
 .interface .flexivel{
     align-items: center;
@@ -134,34 +167,15 @@ main{
     }
 
 }
-/* bloco reservados a projetos */
+
 
 .desenvolvimento{
-    padding: 20px 4%;
+    padding: 40px 4%;
     display: flex;
 }
 
-/* .desenvolvimento .flexivel{
-    padding: 40px 4%;
-} */
-.projetos{
-    max-width: 300px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-}
-.desenvolvimento .projetos{
-   padding: 40px;
-   justify-content: center;
-   align-items: center;
-   margin-top: 40px;
-   border-radius: 25px;
-}
-.projetos:hover{
-    box-shadow: 0 0 20px rgba(250, 235, 215, 0.363);
-    transform: scale(1.05);
-    transition: 0.5s ease-in-out ease-in;
-}
+
+
 
 
 .projetos i{
@@ -176,16 +190,19 @@ main{
 }
 .projetos p{
     text-align: center;
-
 }
+/* final da sessão desenvolvimento */
+
+/* inicio da sessão sobre */
 .sobre {
-    padding: 20px 4%;
+    margin-top: 50px;
+    padding: 40px 4%;
     display: flex;
     margin-bottom: 40px;
     
 }
-.sobre.titulo{
-    margin-bottom: 20px;
+.sobre .titulo{
+    padding-bottom: 40px;
 }
 .sobre .flexivel{
     margin-top: 40px;
@@ -214,16 +231,42 @@ main{
     margin-bottom:  40px ;
     color: antiquewhite;
 }
+/* final da sessão sobre */
 
-.deploy{
+
+/* inicio da sessão desenvolvimento */
+.oculta {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 10.5s ease, opacity 10.5s ease; /* Suaviza a transição */
     justify-content: space-around;
-    
+    box-shadow: 0 0 40px 10px rgba(250, 235, 215, 0.203);
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px rgba(250, 235, 215, 0.167);
 }
-.deploy .titulo{
-    padding-top: -80px;
+.oculta {
+    display: none;
 }
+.oculta .titulo{
+    padding-bottom: 20px;
+}
+.oculta.show {
+    max-height: 1300px; /* Define um valor grande o suficiente para conter o conteúdo */
+    opacity: 1;
+}
+
+button.hide-btn {
+    color:  rgba(250, 235, 215, 0.546);;
+    background-color: black;
+    cursor: pointer;
+    margin-top: 90px;
+}
+button.hide-btn:hover {
+    transition: .5s ease-in-out ease-in; 
+    transform: scale(1.05);
+    color:antiquewhite; 
+}
+
 .img_port{
     width: 360px;
     height: 260px;
@@ -240,6 +283,7 @@ main{
     transition:  5s ease-in-out ease-in;
     transform: scale(1.05);
 }
+
 .over{
     position: absolute;
     top: 0;
@@ -265,7 +309,6 @@ main{
 .flexivel ul li{
    list-style: none;
 }
-
 .icon a{
   text-decoration: none;
   color:  rgb(207, 206, 206);
@@ -281,6 +324,40 @@ main{
     color: antiquewhite;
     font-weight: 900;
 }
+/* inicio da sessão habilidades */
+.skills{
+    padding: 40px 4%;
+   
+
+}
+
+.skills .flexivel{
+    display: flex;
+    margin: 0 px 4%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+    
+}
+
+.skills h3{
+    font-size: 1rem;
+}
+
+.skills .projetos{
+    box-shadow: none;
+}
+/* inicio de seção footer */
+
+footer hr{
+    padding: 0px 4%;
+    color: rgba(32, 16, 92, 0);
+    box-shadow: 0 0 10px 10px rgba(237, 237, 237, 0.144);
+}
+footer .titulo{
+    padding-top: 40px;
+}
 footer p{
     text-align: center;
     margin-top: 40px;
@@ -289,3 +366,39 @@ footer p{
     font-size: .8rem;
 
 }
+@media screen and (max-width: 900px) {
+    header{
+        padding: 5px 4%;
+    }
+    .interface{ max-width: 548 px;
+                padding: 1px 4%;
+                margin-top: 0px;
+    }
+    .flexivel{
+        flex-direction: column;
+    }
+    .corpo .flexivel{
+        flex-direction: column-reverse;
+    }
+    .corpo h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .corpo p{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .corpo img{
+        width: 250px;
+    }
+    .interface .titulo{
+
+        text-align: center;
+    }
+    .skills .flexivel{
+        
+        display: flex;
+        flex-grow:;
+        
+    }
+ }
