@@ -362,6 +362,7 @@ button.hide-btn:hover {
 
 .skills .projetos{
     box-shadow: none;
+    max-width: 50px;
 }
 /* inicio de seção footer */
 
@@ -394,6 +395,9 @@ footer p{
 }
 .esquerda{
     text-align: right;
+}
+.footer{
+    padding: 10px 0px;
 }
 @media screen and (max-width: 968px) {
     header{
@@ -450,15 +454,23 @@ footer p{
     }
     .skills .flexivel{
         display: flex;
-        height: 100px;
-        gap: 30px;
-        margin-bottom: 20px;
+        
+        align-items: center;         
+        display: flex;
+        gap: 10px;
        flex-direction: row;
        grid-row: auto;
+       padding: 0px 0%;
     }
     
     .skills h3{
-        font-size: 1rem;
+        font-size: 1.8rem;
+    }
+    .skills .projetos{
+        
+        max-width: 30px;
+        padding: 10px;
+      
     }
     
 }
@@ -467,6 +479,7 @@ footer p{
     header{
         padding: 10px 0%;
     }
+    
     .menu_desktop , .btn_contatos{
         display:none;
     }
@@ -475,66 +488,70 @@ footer p{
         font-size: 2rem;
     }
     .interface{ 
-        max-width: 500 px;
-        padding: 30px 8%;
+        padding: 20px 8%;
         margin-top: 0px;
     }
-    .corpo {
+    /* .corpo {
         padding: 30px 8%;
-    }
+    } */
     .flexivel{
         flex-direction: column;
     }
-    
-    .corpo .flexivel{
-        flex-direction: column-reverse;
-        gap: 45px;
+    .interface .titulo{
+        text-align: center;
     }
+    .corpo .interface{
+        padding: 20px 8%;
+    }
+    .sobre img{
+        max-width: 99%;
+    }   
     /* .corpo{
         padding: 30px 0%;
     } */
     .corpo h1{
-        font-size: 2rem;
+        /* font-size: 2rem; */
         text-align: center;
     }
     .corpo p{
         font-size: 1.3rem;
         text-align: center;
     }
-    .corpo img{
+    
+
+
+    
+    /* .corpo img{
         width: 340px;
         
         
-    }
-    .interface .titulo{
+    } */
+    
+    
+    .skills .projetos{
 
+        max-width: 350px;
+        height: 250px;
+        padding: 30px 10px;
+        margin-top: 20px;
+        }
+    .projetos i{
+        font-size: 5rem; 
+    }
+    .projetos h3{
+        font-size: 1.3rem;
+        color: antiquewhite;
+        margin: 15px 0;
+    }
+    .projetos p{
         text-align: center;
     }
     
-    .skills .projetos{
-        .projetos{
-            max-width: 200px;
-            height: 250px;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        .projetos i{
-            font-size: 3rem; 
-        }
-        .projetos h3{
-            font-size: 1.3rem;
-            color: antiquewhite;
-            margin: 15px 0;
-        }
-        .projetos p{
-            text-align: center;
-        }
-    }
     .skills .flexivel {
         padding: 10px 0%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 10px;
 
     }
     .footer .interface{
