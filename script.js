@@ -97,3 +97,11 @@ document.querySelector('.scroll-right').addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+const menuHamburger = document.getElementById('menu_hamburger');
+const menuMobile = document.getElementById('menu_mobile');
+
+menuHamburger.addEventListener('click', function() {
+    menuHamburger.classList.toggle('active');
+    menuMobile.classList.toggle('active');
+});

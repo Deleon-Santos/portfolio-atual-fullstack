@@ -95,6 +95,62 @@ header a{
     padding: 8px 13px;  
     border-radius: 25px;
 }
+.menu_mobile{
+    background-color: rgb(173, 171, 171);
+    position: absolute; 
+    top: 65px;
+    right: 0px;
+    width: 50%;
+    height: 39vh;
+    backdrop-filter: blur(10px); 
+    display: none; 
+ }
+ .menu_burguer_btn{
+    width: 30px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid antiquewhite;
+    transition: .2s;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+ }
+ .menu_hamburger_btn div {
+    width: 100%;
+    height: 4px;
+    background-color: antiquewhite;
+    transition: all 0.3s ease;
+}
+.menu_hamburger_btn .active .line-1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu_hamburger_btn .active .line-2 {
+    opacity: 0;
+}
+
+.menu_hamburger_btn .active .line-3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Exibir o menu mobile quando o botão estiver ativo */
+.menu_mobile .active {
+    display: block;
+}
+ /* .linha-1{
+    background: antiquewhite;
+    position: relative;
+    height: 3px;
+    width: 25px;
+    display: none;
+    margin: 5px auto;
+    transform-origin: center;
+    transition: .2s;
+    color: antiquewhite;
+
+ } */
 .menu_desktop li a:hover{
     transition: .5s ease-in-out ease-in;
     background-color: aqua;
@@ -382,23 +438,23 @@ footer .titulo{
 }
 footer p{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
     font-family:Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: .8rem;
-
+    padding: 20px 0px;
+    margin-bottom: 20px;
 }
 .footer .flexivel{
-    gap: 300px;
+    /* gap: 300px; */
     justify-content: space-between ;
     
 }
 .esquerda{
     text-align: right;
 }
-.footer{
-    padding: 10px 0px;
-}
+
+
 @media screen and (max-width: 968px) {
     header{
         padding: 20px 0%; /*  estou fazendo um espaço na margen superior de 40px e 4% das laterais*/
@@ -448,7 +504,7 @@ footer p{
         text-align: center;
     }
     .skills{
-        padding: 40px 4%;
+        padding: 10px 4%;
        
     
     }
@@ -464,20 +520,40 @@ footer p{
     }
     
     .skills h3{
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
     .skills .projetos{
         
-        max-width: 30px;
+        max-width: 100px;
         padding: 10px;
       
     }
-    
+    .footer p{
+        margin-bottom: 20px;
+        
+    }
 }
 @media screen and (max-width: 740px) {
-
-    header{
-        padding: 10px 0%;
+    
+    .menu_mobile{
+        display: block;
+    }
+    .menu_mobile ul a{
+        text-decoration: none;
+        padding: 20px 12%;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+    .menu_mobile ul li:hover{
+        background-color: aqua;
+    }
+    .menu_mobile ul{
+        display: block;
+        text-align: right;
+        padding-right: 12%;
+    }
+    header .interface{
+        padding: 10px 10%;
     }
     
     .menu_desktop , .btn_contatos{
@@ -491,9 +567,7 @@ footer p{
         padding: 20px 8%;
         margin-top: 0px;
     }
-    /* .corpo {
-        padding: 30px 8%;
-    } */
+
     .flexivel{
         flex-direction: column;
     }
@@ -506,9 +580,6 @@ footer p{
     .sobre img{
         max-width: 99%;
     }   
-    /* .corpo{
-        padding: 30px 0%;
-    } */
     .corpo h1{
         /* font-size: 2rem; */
         text-align: center;
@@ -517,17 +588,7 @@ footer p{
         font-size: 1.3rem;
         text-align: center;
     }
-    
-
-
-    
-    /* .corpo img{
-        width: 340px;
-        
-        
-    } */
-    
-    
+  
     .skills .projetos{
 
         max-width: 350px;
@@ -555,7 +616,7 @@ footer p{
 
     }
     .footer .interface{
-        padding: 0 8%;
+        padding: 0 6%;
     }  
     .footer .flexivel{
         gap: 80px;
