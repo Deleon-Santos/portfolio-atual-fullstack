@@ -57,20 +57,6 @@ document.querySelectorAll('.hide-btn').forEach(button => {
 let lastScrollTop = 0;
 const header = document.querySelector('header');
 
-// Função para detectar a rolagem
-window.addEventListener('scroll', () => {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-        // Rolar para baixo - esconde o header
-        header.style.top = '-100px'; // Ajuste o valor para a altura do header
-    } else if (scrollTop === 0) {
-        // No topo da página - mostra o header
-        header.style.top = '0';
-    }
-
-    lastScrollTop = scrollTop;
-});
 
 // Função para detectar o movimento do mouse
 window.addEventListener('mousemove', (event) => {
@@ -82,26 +68,4 @@ window.addEventListener('mousemove', (event) => {
 
 const scrollContainer = document.querySelector('.flexivel');
 
-// Botão para rolar para a esquerda
-document.querySelector('.scroll-left').addEventListener('click', () => {
-    scrollContainer.scrollBy({
-        left: -100, // Ajuste o valor de acordo com a largura de cada item
-        behavior: 'smooth'
-    });
-});
 
-// Botão para rolar para a direita
-document.querySelector('.scroll-right').addEventListener('click', () => {
-    scrollContainer.scrollBy({
-        left: 600, // Ajuste o valor de acordo com a largura de cada item
-        behavior: 'smooth'
-    });
-});
-
-const menuHamburger = document.getElementById('menu_hamburger');
-const menuMobile = document.getElementById('menu_mobile');
-
-menuHamburger.addEventListener('click', function() {
-    menuHamburger.classList.toggle('active');
-    menuMobile.classList.toggle('active');
-});

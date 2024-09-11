@@ -108,11 +108,11 @@ header a{
  .menu_burguer_btn{
     width: 30px;
     height: 50px;
-    outline: none;
+    outline: none; 
     cursor: pointer;
     border: 2px solid antiquewhite;
     transition: .2s;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
@@ -139,18 +139,18 @@ header a{
 .menu_mobile .active {
     display: block;
 }
- /* .linha-1{
+/* .menu_burguer_btn div{
     background: antiquewhite;
     position: relative;
     height: 3px;
     width: 25px;
-    display: none;
+    display: block;
     margin: 5px auto;
     transform-origin: center;
     transition: .2s;
     color: antiquewhite;
 
- } */
+ }  */
 .menu_desktop li a:hover{
     transition: .5s ease-in-out ease-in;
     background-color: aqua;
@@ -535,22 +535,70 @@ footer p{
 }
 @media screen and (max-width: 740px) {
     
-    .menu_mobile{
+    .menu_mobile {
+        background-color: rgb(173, 171, 171);
+        position: absolute;
+        top: 77px;
+        right: 0px;
+        width: 50%;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        display: none; /* Inicialmente escondido */
+    }
+    
+    /* Botão do menu hamburguer */
+    .menu_hamburger_btn {
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    /* Linhas do botão hamburguer */
+    .menu_hamburger_btn div {
+        width: 100%;
+        height: 5px;
+        background-color: antiquewhite;
+        transition: all 0.3s ease;
+    }
+    
+    /* Animação das linhas ao ativar */
+    .menu_hamburger_btn.active .line-1 {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu_hamburger_btn.active .line-2 {
+        opacity: 0;
+    }
+    
+    .menu_hamburger_btn.active .line-3 {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    /* Exibir o menu mobile quando o botão estiver ativo */
+    .menu_mobile.active {
         display: block;
     }
-    .menu_mobile ul a{
+    
+    /* Estilos do menu mobile */
+    .menu_mobile ul {
+        display: block;
+        text-align: center;
+        padding-right: 12%;
+    }
+    
+    .menu_mobile ul a {
         text-decoration: none;
         padding: 20px 12%;
         font-size: 1.3rem;
         cursor: pointer;
-    }
-    .menu_mobile ul li:hover{
-        background-color: aqua;
-    }
-    .menu_mobile ul{
         display: block;
-        text-align: right;
-        padding-right: 12%;
+    }
+    
+    .menu_mobile ul li:hover {
+        background-color: aqua;
     }
     header .interface{
         padding: 10px 10%;
@@ -625,6 +673,8 @@ footer p{
     }
     .footer .icon a{
         font-size: .6rem;
+        padding: 0px 0px;
+        margin: 0px 0px;
     }
     .footer p {
         padding: 10px 0;

@@ -17,40 +17,43 @@
 </head><!--  fim head -->
 <!--  -->
 <body>
-    <header class= cabeca > 
-        <div class="interface" > <!-- inicio de inteface -->
-            <div class="logo" >
+    <header class="cabeca"> 
+        <div class="interface">
+            <div class="logo">
                 <a href="#">
                     <p>DS</p>
                 </a>
             </div>
-            <nav class="menu_desktop" ><!-- inicio de navegação para desctop -->
+
+            <!-- Menu Desktop -->
+            <nav class="menu_desktop">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#sobre-mim">Sobre mim</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
                 </ul>
-            </nav><!--  fim descktop-->
-            <div class="btn_contatos" >
-                <a href="imagem/curriculoEestagio.pdf">
-                    <button>CV</button>
-                </a>
+            </nav>
+
+            <!-- Botão Menu Hamburguer -->
+            <div class="menu_hamburger_btn" id="menu_hamburger">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
             </div>
-            
-           
-        </div><!-- fim interface -->
-        
-        <nav class="menu_mobile" ><!-- inicio de navegação para mobile -->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-            </ul>
-        </nav><!--  fim mobile-->
-       
-    </header><!-- fim da seção header-->
+
+            <!-- Menu Mobile -->
+            <nav class="menu_mobile">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre-mim">Sobre mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+    </header> <!-- fim da seção header -->
     <main>
         <section class="corpo" id="home" >
             <div class="interface">
@@ -221,5 +224,18 @@
         
     </footer>
     <script src="script.js"></script>
+
+    <script>
+        // Seleciona o botão de menu hamburguer e o menu mobile
+        const menuHamburger = document.getElementById('menu_hamburger');
+        const menuMobile = document.querySelector('.menu_mobile');
+
+        // Adiciona um evento de clique ao botão hamburguer
+        menuHamburger.addEventListener('click', function() {
+            // Alterna a classe 'active' no botão e no menu
+            menuHamburger.classList.toggle('active');
+            menuMobile.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
