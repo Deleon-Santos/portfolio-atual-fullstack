@@ -54,9 +54,35 @@ document.querySelectorAll('.hide-btn').forEach(button => {
     });
 });
 
+// let lastScrollTop = 0;
+// const header = document.querySelector('header');
+
+
+// // Função para detectar o movimento do mouse
+// window.addEventListener('mousemove', (event) => {
+//     if (event.clientY < 50) {
+//         // Se o cursor estiver próximo do topo da página, mostra o header
+//         header.style.top = '0';
+//     }
+// });
+
 let lastScrollTop = 0;
 const header = document.querySelector('header');
 
+// Função para detectar a rolagem
+window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Rolar para baixo - esconde o header
+        header.style.top = '-100px'; // Ajuste o valor para a altura do header
+    } else if (scrollTop === 0) {
+        // No topo da página - mostra o header
+        header.style.top = '0';
+    }
+
+    lastScrollTop = scrollTop;
+});
 
 // Função para detectar o movimento do mouse
 window.addEventListener('mousemove', (event) => {
@@ -65,7 +91,3 @@ window.addEventListener('mousemove', (event) => {
         header.style.top = '0';
     }
 });
-
-const scrollContainer = document.querySelector('.flexivel');
-
-
