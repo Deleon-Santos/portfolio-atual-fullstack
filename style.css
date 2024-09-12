@@ -403,7 +403,17 @@ footer p{
 .esquerda{
     text-align: right;
 }
+.section-hidden {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
+/* Estilo para as seções após aparecerem */
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 @media screen and (max-width: 968px) {
     header{

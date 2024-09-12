@@ -91,3 +91,20 @@ window.addEventListener('mousemove', (event) => {
         header.style.top = '0';
     }
 });
+
+// Intersection Observer para animações de seção
+const sections = document.querySelectorAll('.cabeca, .corpo, .sobre, .desenvolvimento, .skills');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('section-visible');
+        } else {
+            entry.target.classList.remove('section-visible');
+        }
+    });
+});
+
+sections.forEach(section => {
+    section.classList.add('section-hidden');
+    observer.observe(section);
+});
