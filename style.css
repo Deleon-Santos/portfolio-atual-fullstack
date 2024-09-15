@@ -228,7 +228,9 @@ main{
     display: flex;
 }
 
-
+.desenvolvimento .titulo{
+    margin-top: 20px;
+}
 
 
 .projetos i{
@@ -531,8 +533,8 @@ footer p{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 1px solid aqua;
-        padding: 5px;
+        border: 2px solid aqua;
+        padding: 4px;
     }
     
     /* Linhas do botão hamburguer */
@@ -580,8 +582,10 @@ footer p{
         display: block;
     }
     
+    
     .menu_mobile ul li:hover {
         background-color: aqua;
+        
     }
     header .interface{
         padding: 1px 10%;
