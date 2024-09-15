@@ -93,7 +93,7 @@ window.addEventListener('mousemove', (event) => {
 });
 
 // Intersection Observer para animações de seção
-const sections = document.querySelectorAll('.cabeca, .corpo, .sobre, .desenvolvimento, .skills');
+const sections = document.querySelectorAll('.corpo, .sobre, .desenvolvimento, .skills');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
