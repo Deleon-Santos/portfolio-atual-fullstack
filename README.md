@@ -1,14 +1,14 @@
-# Portfólio de Deleon Santos
+# Meu Portitfolio Pessoal
 
 ## Visão Geral
-Este portfólio reflete minhas habilidades como desenvolvedor fullstack, além de minha paixão por tecnologia, pela vida e por ambientes familiares e amigáveis. O site foi projetado para exibir minhas competências técnicas, projetos desenvolvidos e a importância que a tecnologia tem em facilitar o nosso dia a dia.
+Este portfólio reflete minhas habilidades como desenvolvedor fullstack, além de minha paixão por tecnologia, pela vida e pela familia. O site foi projetado para exibir minhas competências técnicas, projetos desenvolvidos e a importância que a tecnologia tem em facilitar o nosso dia a dia.
 
 ## Objetivos do Portfólio
 Este portfólio tem como principais objetivos:
 - Apresentar-me como um desenvolvedor fullstack, com habilidades em diversas tecnologias.
-- Demonstrar minha proficiência em **HTML**, **CSS**, **JavaScript**, **Python** e **bancos de dados**.
+- Demonstrar o meu conhecimento em **HTML**, **CSS**, **JavaScript**, **Python** , **bancos de dados** e outras tecnologias para desenvolvimneto de sistemas e soluções com use de tecnologia.
 - Compartilhar minha trajetória pessoal e profissional, destacando o equilíbrio entre responsabilidade, trabalho e lazer.
-- Mostrar meus projetos desenvolvidos, focando em aplicações web, desktop e de linha de comando.
+- Mostrar meus projetos desenvolvidos, focando em aplicações web, desktop e de linha de comando utilizando as principais linguagens de programação.
 
 ## Público-Alvo
 - Empresas e profissionais em busca de desenvolvedores fullstack.
@@ -38,7 +38,7 @@ O portfólio demonstra minhas habilidades em:
 - **Infraestrutura e DevOps:** Compreensão de práticas ágeis e ferramentas de automação que facilitam o desenvolvimento e a entrega contínua de software.
 
 ## Filosofia e Estilo
-Valorizo o equilíbrio entre o trabalho e a vida pessoal. Acredito que a tecnologia deve melhorar nossas vidas e aproximar as pessoas. Isso se reflete no design funcional e amigável do portfólio, que busca criar soluções úteis e inovadoras.
+Valorizo o equilíbrio entre o trabalho e a vida pessoal. Acredito que a tecnologia deve melhorar nossas vidas e aproximar as pessoas. Isso se reflete no design funcional e amigável do portfólio.
 
 ---
 
