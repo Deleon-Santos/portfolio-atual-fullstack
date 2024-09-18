@@ -257,8 +257,14 @@ main{
     padding: 80px 4%;
 }
 
+.oculta .flexivel{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
 .oculta .interface{
     padding: o 4%;
+    
 }
 .oculta {
     display: none;
@@ -267,7 +273,7 @@ main{
     padding-bottom: 20px;
 }
 .oculta.show {
-    max-height: 1300px; /* Define um valor grande o suficiente para conter o conteúdo */
+    max-height: 1700px; /* Define um valor grande o suficiente para conter o conteúdo */
     opacity: 1;
 }
 
@@ -285,7 +291,8 @@ button.hide-btn:hover {
 
 .img_port{
     border: 10px;
-    width: 360px;
+    width: 300px;
+   
     height: 260px;
     background-size: cover;
     background-position: 100% 0%;
@@ -536,6 +543,15 @@ footer p{
         padding: 4px;
     }
     
+    .menu_hamburger_btn {
+        z-index: 15; /* Garante que o botão fique sempre acima do menu */
+        position: relative; /* Necessário para manter o z-index funcionando */
+    }
+    
+    /* Adicional de hover para melhorar a interação visual */
+    .menu_hamburger_btn:hover {
+        box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0.367);
+    }
     /* Linhas do botão hamburguer */
     .menu_hamburger_btn div {
         width: 100%;

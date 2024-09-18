@@ -144,9 +144,9 @@
             <div class="interface">          
                 <h2 class="titulo">Dep<strong>loy</strong></h2>  
                 <div class="flexivel">                   
-                        <div class="img_port" style="background-image: url(imagem/site\ android.png);"><div class="over"><a href="https://deleon-santos.github.io/Mini-Site-Projeto-AndroidOS/AndroidOS.html">Site Android</a></div></div> 
-                        <div class="img_port" style="background-image: url(imagem/calculadora.png);"><div class="over"><a href="https://deleon-santos.github.io/Calculadora-html">Calculadora</a></div></div>
-                        <div class="img_port" style="background-image: url(imagem/portfolio.png);"><div class="over"><a href="https://deleon-santos.github.io/Portfolio/apresentacao.html">Portfolio</a></div></div>
+                    <div class="img_port" style="background-image: url(imagem/site\ android.png);"><div class="over"><a href="https://deleon-santos.github.io/Mini-Site-Projeto-AndroidOS/AndroidOS.html">Site Android</a></div></div> 
+                    <div class="img_port" style="background-image: url(imagem/calculadora.png);"><div class="over"><a href="https://deleon-santos.github.io/Calculadora-html">Calculadora</a></div></div>
+                    <div class="img_port" style="background-image: url(imagem/portfolio.png);"><div class="over"><a href="https://deleon-santos.github.io/Portfolio/apresentacao.html">Portfolio</a></div></div>
                 </div><!--fim de interface-->
                  <button class="hide-btn">Voltar</button>
             </div>
@@ -158,7 +158,11 @@
                 <div class="flexivel">                  
                     <div class="img_port" style="background-image: url(imagem/app\ valquiria.png);"><div class="over"><a href="https://github.com/Deleon-Santos/Projeto-Valquiria-Caixa-Regisitradora">Sitema Valquira</a></div></div>
                     <div class="img_port" style="background-image: url(imagem/cadastra\ item.png);"><div class="over"><a href="https://github.com/Deleon-Santos/Cadastra-itens">Cadastra Item</a></div></div>
-                    <div class="img_port" style="background-image: url(imagem/le\ postits.png);"><div class="over"><a href="https://github.com/Deleon-Santos/Le-Postitis">le Postits</a></div></div>                   
+                    <div class="img_port" style="background-image: url(imagem/le\ postits.png);"><div class="over"><a href="https://github.com/Deleon-Santos/Le-Postitis">le Postits</a></div></div> 
+                    <div class="img_port" style="background-image: url(imagem/ticket.png);"><div class="over"><a href="https://github.com/Deleon-Santos/Ticket-de-embarque ">Ticket de Embarque</a></div></div>
+                    <div class="img_port" style="background-image: url(imagem/calculadora\ python.png);"><div class="over"><a href="https://github.com/Deleon-Santos/Calculadora ">Calculadora Python</a></div></div>
+                    <div class="img_port" style="background-image: url(imagem/calculadora\py\ python.png);"><div class="over"><a href="https://github.com/Deleon-Santos/Calculadora "></a></div></div>   
+                                       
                 </div><!--fim de interface-->
                 <button class="hide-btn">Voltar</button>
             </div>
@@ -171,7 +175,9 @@
                     <div class="img_port" style="background-image: url(imagem/Cadastra\ Pessoas.png);"><div class="over"><a href="https://github.com/Deleon-Santos/cadastro-de-pessoas">Cadastrar Pessoas</a></div></div>
                     <div class="img_port" style="background-image: url(imagem/comanda_img.png);"><div class="over"><a href="https://github.com/Deleon-Santos/Comanda_lanchonet">Comandas lanches</a></div></div>
                     <div class="img_port" style="background-image: url(imagem/livros.png);"><div class="over"><a href="https://github.com/Deleon-Santos/livraria">livros</a></div></div>
+                    <div class="img_port" style="background-image: url(imagem/Calculadora\ Binaria.png);"><div class="over"><a href="https://github.com/Deleon-Santos/colculadora-binaria">Calculadora Binaria</a></div></div>
                     
+                 
                 </div><!--fim de interface-->
                 <button class="hide-btn" >Voltar</button>
             </div>
@@ -262,16 +268,25 @@
     <script src="script.js"></script>
 
     <script>
-        // Seleciona o botão de menu hamburguer e o menu mobile
+        // Seleciona o botão de menu hamburguer, o menu mobile e todas as opções do menu
         const menuHamburger = document.getElementById('menu_hamburger');
         const menuMobile = document.querySelector('.menu_mobile');
-
-        // Adiciona um evento de clique ao botão hamburguer
+        const menuLinks = document.querySelectorAll('.menu_mobile a');
+        
+        // Adiciona um evento de clique ao botão hamburguer para abrir/fechar o menu
         menuHamburger.addEventListener('click', function() {
-            // Alterna a classe 'active' no botão e no menu
-            menuHamburger.classList.toggle('active');
-            menuMobile.classList.toggle('active');
+        menuHamburger.classList.toggle('active');
+        menuMobile.classList.toggle('active');
+        });
+        
+        // Adiciona eventos de clique a cada link do menu mobile para fechar o menu
+        menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            menuHamburger.classList.remove('active'); // Remove a classe 'active' do botão
+            menuMobile.classList.remove('active'); // Remove a classe 'active' do menu mobile
+        });
         });
     </script>
+
 </body>
 </html>
