@@ -1,6 +1,11 @@
 # Meu Portfolio Pessoal
 https://deleon-santos.github.io/portifolio-atual-programados-fullstack/
-
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40" height="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/>
+  
+</p>
 ## Visão Geral
 Este portfólio reflete minhas habilidades como desenvolvedor fullstack, além de minha paixão por tecnologia, pela vida e pela familia. O site foi projetado para exibir minhas competências técnicas, projetos desenvolvidos e a importância que a tecnologia tem em facilitar o nosso dia a dia.
 
