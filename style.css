@@ -4,26 +4,28 @@ html{
 }
 :root{
     --body-background-color:black;
-    --color-fonte-geral:rgb(104, 103, 102);
-    --color-destaque:antiquewhite;
-    --color-strong:aqua;
-    --color-sadown: rgba(250, 235, 215, 0.363);
     --header-background-color:black;
+    --footer-background-color:black;
+    --color-fonte-geral:rgb(104, 103, 102);
+    --color-destaque:rgba(250, 235, 215, 0.72);
+    --color-strong:aqua;
+    --color-shadown: rgba(250, 235, 215, 0.363);
     --color-backgound-hover:aqua;
-    --color-fonte-reral-hover:black;
+    --color-fonte-hover:black;
 
     --fonte-style-geral:'Courier New', Courier, monospace;
 
 }
+
 *{
     margin: 0;
     padding: 0; 
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(104, 103, 102);
+    font-family: var(--fonte-style-geral);
+    color: var(--color-fonte-geral);
 }
 
 body{
-    background-color: black;
+    background-color: var(--body-background-color);
     height: 100vh;
 }
 
@@ -37,7 +39,7 @@ body{
 }
 
 .titulo{
-    color: antiquewhite;
+    color: var(--color-destaque);
     font-size: 2rem;
     text-align: center;
     margin-top: 20px;
@@ -45,7 +47,7 @@ body{
 }
 
 .titulo strong{
-    color: aqua;
+    color:var(--color-strong);
 }
 
 .projetos{
@@ -61,7 +63,7 @@ body{
 }
 
 .projetos:hover{
-    box-shadow: 0 0 20px rgba(250, 235, 215, 0.363);
+    box-shadow: 0 0 20px var(--color-shadown);
     transform: scale(1.05);
     transition: 0.5s ease-in-out ease-in;
 }
@@ -72,7 +74,7 @@ header{
     margin: auto ;
     align-items:center;
     margin-bottom: 40px;
-    background-color: black;
+    background-color:var(--header-background-color);
 }
 
 header {
@@ -84,7 +86,7 @@ header {
 }
 
 .logo p, .logo_burguer p{
-    color: rgb(10, 247, 235);
+    color: var(--color-strong);
     font-size: 3rem;
     display: flex;
     cursor:default;
@@ -108,7 +110,7 @@ header a{
 
 .menu_desktop li a{
     text-decoration: none;
-    color: rgb(104, 103, 102);
+    color:var(--color-fonte-geral);
     font-size: 1rem;
     margin: 0 20px;
     display: inline-block; 
@@ -122,9 +124,9 @@ header a{
 
 .menu_desktop li a:hover{
     transition: .5s ease-in-out ease-in;
-    background-color: aqua;
+    background-color:var(--color-backgound-hover);
     transform: scale(1.05);
-    color: black;
+    color:var(--color-fonte-hover);
     font-weight: 900;
 }
 
@@ -137,19 +139,19 @@ header ul{
     font-size: 1.3rem;
     padding: 7PX 30PX;
     font-weight: 900;
-    background-color: rgb(36, 37, 37);
+    background-color: var(--footer-background-color);
     cursor: pointer;
     border-radius: 25PX;
     display: inline-block;
-    color: aqua;
-    border-color: aqua;
+    color: var(--color-strong);
+    border-color: var(--color-strong);
 }
 
 .btn_contatos button:hover{
     transition: .3s ease-in-out ease-in;
-    background-color: aqua;
+    background-color:var(--color-backgound-hover);
     transform: scale(1.05);
-    color: black; 
+    color:var(--color-fonte-hover); 
 }
 
 main{  
@@ -169,16 +171,16 @@ main{
 .label h1{
     font-size: 3rem;
     text-align: left;
-    color: rgb(207, 206, 206) ;
+    color: var(--color-destaque);
 }
 
 .label strong{
     font-weight: 900;
-    color: aqua;
+    color: var(--color-strong);
 }
     
 .label p{
-    color:  rgb(104, 103, 102);
+    color:var(--color-fonte-geral);
     font-size: 2rem;
     margin-top:40px ;
 }
@@ -225,20 +227,20 @@ main{
 }
 
 .sobre img:hover{
-    box-shadow: 0 0 20px rgba(250, 235, 215, 0.363);
+    box-shadow: 0 0 20px var(--color-shadown);
     transform: scale(1.01);
     transition: 0.5s ease-in-out ease-in;
 }
 
 .sobre abbr{
     cursor: pointer;
-    color: aqua;
+    color: var(--color-strong);
     font-weight: 900;
 }
 
 .sobre .text_sobre h3{
     margin-bottom:  40px ;
-    color: antiquewhite;
+    color: var(--color-destaque);
 }
 
 /* inicio da sessão desenvolvimento */
@@ -253,12 +255,12 @@ main{
 
 .projetos i{
     font-size: 5rem;
-    color: aqua; 
+    color: var(--color-strong); 
 }
 
 .projetos h3{
     font-size: 2rem;
-    color: antiquewhite;
+    color: var(--color-destaque);
     margin: 15px 0;
 }
 .projetos p{
@@ -272,7 +274,7 @@ main{
     overflow: hidden;
     transition: max-height 10.5s ease, opacity 10.5s ease; /* Suaviza a transição */
     justify-content: space-around;
-    box-shadow: 0 0 40px 10px rgba(250, 235, 215, 0.203);
+    box-shadow: 0 0 40px 10px var(--color-shadown);
     padding: 80px 4%;
 }
 
@@ -300,8 +302,8 @@ main{
 }
 
 button.hide-btn {
-    color:  rgba(250, 235, 215, 0.546);;
-    background-color: black;
+    color:  var(--color-fonte-geral);
+    background-color: var(--body-background-color);
     cursor: pointer;
     margin-top: 90px;
 }
@@ -309,7 +311,7 @@ button.hide-btn {
 button.hide-btn:hover {
     transition: .5s ease-in-out ease-in; 
     transform: scale(1.05);
-    color:antiquewhite; 
+    color:var(--color-destaque); 
 }
 
 .img_port{
@@ -337,8 +339,8 @@ button.hide-btn:hover {
     width: 100%;
     height: 100%;
     border-radius: 40px;
-    background-color: rgba(49, 50, 50, 0.346);
-    color:antiquewhite;
+    background-color: rgba(0, 0, 0, 0.283);
+    color:var(--color-destaque);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,7 +352,7 @@ button.hide-btn:hover {
     opacity: 1;
     transition:  5s ease-in-out ease-in;
     transform: scale(1.02);
-    box-shadow: 0 0 20px 10px rgba(250, 235, 215, 0.167);
+    box-shadow: 0 0 20px 10px var(--color-shadown);
 }
 
 .flexivel ul li{
@@ -360,12 +362,12 @@ button.hide-btn:hover {
 .over:hover a{
     cursor: pointer;
     transform: scale(1.02);
-    color: antiquewhite;
+    color: var(--color-destaque);
 }
 
 .icon a{
   text-decoration: none;
-  color:  rgb(207, 206, 206);
+  color:  var(--color-destaque);
   font-size: 1.1rem;
   padding: 10px;
 }
@@ -377,7 +379,7 @@ button.hide-btn:hover {
 .icon:hover{
     transition:  5s ease-in-out ease-in;
     transform: scale(1.02);
-    color: antiquewhite;
+    color:var(--color-destaque);
     font-weight: 900;
 }
 
@@ -406,22 +408,24 @@ button.hide-btn:hover {
 /* inicio de seção footer */
 
 .borda{
-    border-top: 1 solid rgba(32, 16, 92, 0);
+    border-top: 1 solid var(--color-shadown);
     padding: 0px 4%;  
 }
 
 .footer{
     padding: 0 4%;
-    box-shadow: 0 0 10px 10px rgba(237, 237, 237, 0.144);
+    box-shadow: 0 0 10px 10px var(--color-shadown);
 }
 
 footer .titulo{
     padding-top: 40px;    
 }
-.footer.icon>i:hover{
+
+.footer.icon > i:hover{
     font-weight: 800;
-    color: antiquewhite;
+    color: var(--color-destaque)
 }
+
 footer p{
     text-align: center;
     margin-top: 30px;
@@ -435,6 +439,7 @@ footer p{
 .footer .flexivel{   
     justify-content: space-between ;   
 }
+
 .esquerda{
     text-align: right;
 }
@@ -447,9 +452,9 @@ footer p{
 .footer .logo_rodape{
     align-items: center;
     justify-content: center;
-    border: 2px solid aqua;
+    border: 0px solid var(--color-strong);
     border-radius: 10px;
-    box-shadow:0 0 5px 3px rgba(0, 255, 255, 0.296);
+    box-shadow:0 0 3px 2px rgba(0, 255, 255, 0.296);
 }
 
 .section-hidden {
