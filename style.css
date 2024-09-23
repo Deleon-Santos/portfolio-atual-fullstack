@@ -273,7 +273,7 @@ main{
     padding-bottom: 20px;
 }
 .oculta.show {
-    max-height: 1700px; /* Define um valor grande o suficiente para conter o conteúdo */
+    max-height: 2200px; /* Define um valor grande o suficiente para conter o conteúdo */
     opacity: 1;
 }
 
@@ -410,6 +410,9 @@ footer p{
 }
 .esquerda{
     text-align: right;
+}
+.footer .logo_rodape img{
+    width: 100px;
 }
 .section-hidden {
     opacity: 0;
@@ -675,7 +678,7 @@ footer p{
         padding: 0 6%;
     }  
     .footer .flexivel{
-        gap: 80px;
+        gap: 50px;
         flex-direction: row;
 
     }
@@ -699,6 +702,9 @@ footer p{
         cursor: pointer;
         position: relative;
     }
-
+    .footer .logo_rodape img{
+        max-width:  70px;
+        
+    }
     
  }
