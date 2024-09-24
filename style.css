@@ -9,12 +9,11 @@ html{
     --color-fonte-geral:rgb(104, 103, 102);
     --color-destaque:rgba(250, 235, 215, 0.72);
     --color-strong:aqua;
-    --color-shadown: rgba(250, 235, 215, 0.363);
+    --color-shadown: rgba(250, 235, 215, 0.205);
     --color-backgound-hover:aqua;
     --color-fonte-hover:black;
 
     --fonte-style-geral:'Courier New', Courier, monospace;
-
 }
 
 *{
@@ -67,6 +66,7 @@ body{
     transform: scale(1.05);
     transition: 0.5s ease-in-out ease-in;
 }
+
 /*  geral-  o atalho pra gerar um  comentario precione "CTRl" + ";"*/ 
 
 header{
@@ -721,7 +721,7 @@ footer p{
         padding: 0 6%;
     }  
     .footer .flexivel{
-        gap: 50px;
+        gap: 30px;
         flex-direction: row;
 
     }
