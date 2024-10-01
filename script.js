@@ -98,6 +98,7 @@ link.addEventListener('click', function() {
     menuMobile.classList.remove('active'); // Remove a classe 'active' do menu mobile
 });
 });
+
 // Intersection Observer para animações de seção
 const sections = document.querySelectorAll('.corpo, .sobre, .desenvolvimento, .skills');
 const observer = new IntersectionObserver((entries) => {
