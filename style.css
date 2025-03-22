@@ -402,10 +402,9 @@ button.hide-btn:hover {
 
 .portfolio span{
     position: relative;
-   
+    margin-bottom: 40px;
 }
 .repositorio{
-    margin-bottom:  25px;
     padding: 5px 40px;
     font-size: 1.2rem;
     font-weight: 900;
@@ -413,6 +412,7 @@ button.hide-btn:hover {
     background-color: var(--color-strong);
     border: solid 2px var(--color-destaque);
     cursor: pointer;
+    text-decoration: none;
 }
 .repositorio:hover{
     transform: scale(1.03);
