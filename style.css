@@ -125,10 +125,11 @@ header a{
 
 .menu_desktop li a:hover{
     transition: .5s ease-in-out ease-in;
-    background-color:var(--color-backgound-hover);
+    background-color:var(--color-backgound);
     transform: scale(1.05);
-    color:var(--color-fonte-hover);
+    color:var(--color-destaque);
     font-weight: 900;
+    text-decoration: underline;
 }
 
 header ul{
@@ -187,7 +188,7 @@ main{
 }
 
 .img_label img{
-    border-radius: 25%;
+    border-radius: 15%;
     width: 350px;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -222,16 +223,9 @@ main{
 .sobre .img_sobre img{
     border-radius: 40px; 
 }
-.img_sobre{
-    
-    border-radius: 40px;
-}
+/*  */
 
-.sobre img:hover{
-    box-shadow: 0 0 20px var(--color-shadown);
-    transform: scale(1.01);
-    transition: 0.5s ease-in-out ease-in;
-}
+
 
 .sobre abbr{
     cursor: pointer;
@@ -298,7 +292,7 @@ main{
 }
 
 .oculta.show {
-    max-height: 2200px; /* Define um valor grande o suficiente para conter o conteúdo */
+    max-height: 2200vh; /* Define um valor grande o suficiente para conter o conteúdo */
     opacity: 1;
 }
 
@@ -385,6 +379,7 @@ button.hide-btn:hover {
 }
 
 .portfolio{
+    margin-bottom: 30px;
     width: 310px;
     height:700px;
     
@@ -422,7 +417,7 @@ button.hide-btn:hover {
 .repositorio:hover{
     transform: scale(1.03);
     transition: 0.5s ease-in-out ease-in;
-
+    color: var(--color-destaque);
 }
 
 .portfolio h3{
