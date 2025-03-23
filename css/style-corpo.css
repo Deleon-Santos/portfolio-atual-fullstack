@@ -1,0 +1,82 @@
+main{  
+    margin-top: 100px; 
+ }
+ 
+ .corpo{
+     padding: 150px 4% 
+ }
+ 
+ .interface .flexivel{
+     align-items: center;
+     justify-content: center;
+     gap: 90px;
+ }
+ 
+ .label h1{
+     font-size: 3rem;
+     text-align: left;
+     color: var(--color-destaque);
+ }
+ 
+ .label strong{
+     font-weight: 900;
+     color: var(--color-strong);
+ }
+     
+ .label p{
+     color:var(--color-fonte-geral);
+     font-size: 2rem;
+     margin-top:40px ;
+ }
+ 
+ .img_label img{
+     border-radius: 15%;
+     width: 350px;
+     position: relative;
+     animation: flutuar 2s ease-in-out infinite alternate;
+ }
+ @keyframes flutuar {
+     0%{
+         top: 0;
+     }
+     100%{
+         top: 30px;
+     }
+ }
+ 
+ /* inicio da sessão sobre */
+ .sobre {
+     margin-top: 20px;
+     padding: 40px 4%;
+     display: flex;
+     margin-bottom: 40px;
+     
+ }
+ 
+ .sobre .titulo{
+     padding-bottom: 40px;
+ }
+ 
+ .sobre .flexivel a{
+     margin-top: 0px 8%;
+    
+ }
+ 
+ .sobre .img_sobre img{
+     border-radius: 40px; 
+ }
+ /*  */
+ 
+ 
+ 
+ .sobre abbr{
+     cursor: pointer;
+     color: var(--color-strong);
+     font-weight: 900;
+ }
+ 
+ .sobre .text_sobre h3{
+     margin-bottom:  40px ;
+     color: var(--color-destaque);
+ }
+ 

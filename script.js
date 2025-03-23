@@ -1,13 +1,8 @@
 // Seleciona todos os itens de projeto clicáveis
 document.querySelectorAll('.projetos').forEach(item => {
-    item.addEventListener('click', () => {
-        
+    item.addEventListener('click', () => {  
         const targetSection = document.getElementById(item.getAttribute('data-target'));
-        
-        
         document.querySelector('.desenvolvimento').style.display = 'none';
-
-        
         targetSection.style.display = 'block';
     });
 });
@@ -15,27 +10,23 @@ document.querySelectorAll('.projetos').forEach(item => {
 // Adiciona evento para esconder as seções quando o botão "Esconder" for clicado
 document.querySelectorAll('.hide-btn').forEach(button => {
     button.addEventListener('click', (event) => {
-        const section = event.target.closest('section');
-        
-        
+        const section = event.target.closest('section');  
         section.style.display = 'none';
-        
-        
-        document.querySelector('.desenvolvimento').style.display = 'block';
+ document.querySelector('.desenvolvimento').style.display = 'block';
     });
 });
 
 // Seleciona todos os itens de projeto clicáveis
 document.querySelectorAll('.projetos').forEach(item => {
-    item.addEventListener('click', () => {
-        
+    item.addEventListener('click', () => {      
         const targetSection = document.getElementById(item.getAttribute('data-target'));
-        
-        
         document.querySelector('.desenvolvimento').style.display = 'none';
 
         // Mostra a seção correspondente com suavidade
         targetSection.classList.add('show');
+        setTimeout(() => {
+            document.querySelector('.desenvolvimento').style.display = 'none';
+        }, 1500);
     });
 });
 
@@ -50,7 +41,7 @@ document.querySelectorAll('.hide-btn').forEach(button => {
         // Mostra novamente a seção desenvolvimento com um pequeno delay para suavidade
         setTimeout(() => {
             document.querySelector('.desenvolvimento').style.display = 'block';
-        }, 500); // Espera a transição de 0.5s
+        }, 1500); // Espera a transição de 0.5s
     });
 });
 

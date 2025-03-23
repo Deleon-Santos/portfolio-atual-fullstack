@@ -1,0 +1,68 @@
+/* Configurações gerais e tabela de cores*/
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --body-background-color:black;
+    --header-background-color:black;
+    --footer-background-color:black;
+    --color-fonte-geral:rgb(104, 103, 102);
+    --color-destaque:rgba(250, 235, 215, 0.72);
+    --color-strong:aqua;
+    --color-shadown: rgba(250, 235, 215, 0.205);
+    --color-backgound-hover:aqua;
+    --color-fonte-hover:black;
+    --fonte-style-geral:'Courier New', Courier, monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: var(--fonte-style-geral);
+    color: var(--color-fonte-geral);
+}
+
+body{
+    background-color: var(--body-background-color);
+    height: 100vh;
+}
+
+.interface{
+    max-width:1024px;
+    margin: 0 auto; 
+}
+
+.flexivel{
+    display: flex;
+}
+
+.titulo{
+    color: var(--color-destaque);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.titulo strong{
+    color:var(--color-strong);
+}
+
+.projetos{
+    max-width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 40px;
+   border-radius: 25px;
+   box-shadow: 0 0 10px var(--color-shadown);
+}
+
+.projetos:hover{
+    box-shadow: 0 0 20px var(--color-shadown);
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out ease-in;
+}

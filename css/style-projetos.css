@@ -1,0 +1,188 @@
+
+/* inicio da sessão desenvolvimento */
+.desenvolvimento{
+    padding: 40px 4%;
+    display: flex;
+}
+
+.desenvolvimento .titulo{
+    margin-top: 20px;
+}
+
+.projetos i{
+    font-size: 5rem;
+    color: var(--color-strong); 
+}
+
+.projetos h3{
+    font-size: 2rem;
+    color: var(--color-destaque);
+    margin: 15px 0;
+}
+.projetos p{
+    text-align: center;
+}
+
+/* final da sessão desenvolvimento */
+.oculta {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 10.5s ease, opacity 10.5s ease; /* Suaviza a transição */
+    justify-content: space-around;
+    box-shadow: 0 0 40px 10px var(--color-shadown);
+    padding: 80px 4%;
+}
+
+.oculta .flexivel{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.oculta .interface{
+    padding: o 4%;  
+}
+
+.oculta {
+    display: none;
+}
+
+.oculta .titulo{
+    padding-bottom: 20px;
+}
+
+.oculta.show {
+    max-height: 2200vh; /* Define um valor grande o suficiente para conter o conteúdo */
+    opacity: 1;
+}
+
+button.hide-btn {
+    color:  var(--color-fonte-geral);
+    background-color: var(--body-background-color);
+    cursor: pointer;
+    margin-top: 90px;
+}
+
+button.hide-btn:hover {
+    transition: .5s ease-in-out ease-in; 
+    transform: scale(1.05);
+    color:var(--color-destaque); 
+}
+
+.img_port{
+    border: 10px;
+    width: 260px;
+    height: 260px;
+    background-size: cover;
+    background-position: 100% 0%;
+    margin-top: 40px;
+    border-radius: 40px;
+    transition: 5s;
+    position: relative;
+}
+
+.img_port:hover{
+    background-position: 100% 100%;
+    transition:  5s ease-in-out ease-in;
+    transform: scale(1.02);
+}
+
+.over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.283);
+    color:var(--color-destaque);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+.over:hover{
+    opacity: 1;
+    transition:  5s ease-in-out ease-in;
+    transform: scale(1.02);
+    box-shadow: 0 0 20px 10px var(--color-shadown);
+}
+
+.flexivel ul li{
+   list-style: none;
+}
+
+.over:hover a{
+    cursor: pointer;
+    transform: scale(1.02);
+    color: var(--color-destaque);
+}
+
+.icon a{
+  text-decoration: none;
+  color:  var(--color-destaque);
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.icon i{font-size: 1.5rem;
+    padding: 10px;
+}
+
+.icon:hover{
+    transition:  5s ease-in-out ease-in;
+    transform: scale(1.02);
+    color:var(--color-destaque);
+    font-weight: 900;
+}
+
+.portfolio{
+    margin-bottom: 30px;
+    width: 310px;
+    height:700px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: var(--color-strong);
+}
+.desc-repositorio{
+    padding: 20px 10%;
+    text-align: center;
+    color: var(--color-fonte-geral);
+    font-size: 1.2rem;
+    font-weight: 600;
+    height: 300px;
+
+}
+
+.portfolio span{
+    position: relative;
+    margin-bottom: 40px;
+}
+.repositorio{
+    padding: 5px 40px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 10px;
+    background-color: var(--color-strong);
+    border: solid 2px var(--color-destaque);
+    cursor: pointer;
+    text-decoration: none;
+}
+.repositorio:hover {
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out ease-in;
+    color: var(--color-destaque);
+}
+
+.portfolio h3{
+    margin-top: 30px;
+}
+
+/* Estilo para as seções após aparecerem */

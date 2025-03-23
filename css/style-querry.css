@@ -1,0 +1,283 @@
+@media screen and (max-width: 968px) {
+    header{
+        padding: 20px 0%; /*  estou fazendo um espaço na margen superior de 40px e 4% das laterais*/
+       
+    }
+    .menu_desktop li a{  
+        margin: 0 10px;   
+    }
+     .logo p{
+        font-size:1.8rem ;
+     }
+     .btn_contatos button{
+        font-size: 1rem;
+        padding: 7PX 20PX;
+    }
+  
+    .corpo{
+        padding: 80px 4% 
+    }
+    .interface .flexivel{
+        gap: 50px;
+    }
+    .label h1{
+        font-size: 2rem;
+    }     
+    .label p{
+        font-size: 1.5rem;
+    }
+    .sobre .flexivel{
+        flex-direction: column;
+    }
+    .projetos{
+        max-width: 200px;
+        height: 250px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .projetos i{
+        font-size: 3rem; 
+    }
+    .projetos h3{
+        font-size: 1.3rem;
+        color: antiquewhite;
+        margin: 15px 0;
+    }
+    .projetos p{
+        text-align: center;
+    }
+    .skills{
+        padding: 10px 4%;
+       
+    
+    }
+    .skills .flexivel{
+        display: flex;
+        
+        align-items: center;         
+        display: flex;
+        gap: 10px;
+       flex-direction: row;
+       grid-row: auto;
+       padding: 0px 0%;
+    }
+    
+    .skills h3{
+        font-size: 1rem;
+    }
+    .skills .projetos{
+        
+        max-width: 100px;
+        padding: 10px;
+      
+    }
+    .footer p{
+        margin-bottom: 20px;
+        
+    }
+}
+@media screen and (max-width: 740px) {
+    
+    .menu_mobile {
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top: 67px;
+        right: 0px;
+        width: 50%;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        display: none; /* Inicialmente escondido */
+        box-shadow: 0 0 1px 3px rgba(250, 235, 215, 0.157);
+        transition:  10.5s ease-in-out ease-in;
+    }
+    .menu_mobile a:hover{
+        transition: .5s ease-in-out ease-in;
+        background-color: aqua;
+        transform: scale(1.05);
+        color: black;
+        
+    }
+    .logo_burguer p{
+        font-size: 2.4rem;
+    }
+    .logo_burguer{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    /* Botão do menu hamburguer */
+    .menu_hamburger_btn {
+        width: 28px;
+        height: 18px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 2px solid aqua;
+        padding: 4px;
+    }
+    
+    .menu_hamburger_btn {
+        z-index: 15; /* Garante que o botão fique sempre acima do menu */
+        position: relative; /* Necessário para manter o z-index funcionando */
+    }
+    
+    /* Adicional de hover para melhorar a interação visual */
+    .menu_hamburger_btn:hover {
+        box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0.367);
+    }
+    /* Linhas do botão hamburguer */
+    .menu_hamburger_btn div {
+        width: 100%;
+        height: 2px;
+        background-color: aqua;
+        transition: all 0.3s ease;
+    }
+
+    .menu_hamburger_btn:hover{
+        
+        box-sizing: 0 0 10px 5px rgba(0, 255, 255, 0.367);
+    }
+    
+    .menu_hamburger_btn.active .line-1 {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu_hamburger_btn.active .line-2 {
+        opacity: 0;
+    }
+    
+    .menu_hamburger_btn.active .line-3 {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    
+    .menu_mobile.active {
+        display: block;
+    }
+    
+    
+    .menu_mobile ul {
+        display: block;
+        text-align: center;
+        padding-right: 12%;
+    }
+    
+    .menu_mobile ul a {
+        text-decoration: none;
+        padding: 20px 12%;
+        font-size: 1.3rem;
+        cursor: pointer;
+        display: block;
+    }
+    
+    
+    .menu_mobile ul li:hover {
+        background-color: aqua;
+        
+    }
+    header .interface{
+        padding: 1px 10%;
+        justify-content: space-between;
+        display: flex;
+        margin-top: -15px;
+        padding-top: -20px;
+        
+        
+    }
+    
+    .menu_desktop  {
+        display:none;
+    }
+    .btn_contatos button{
+        display: none;
+    }
+    
+    .interface{ 
+        padding: 20px 8%;
+        margin-top: 0px;
+    }
+
+    .flexivel{
+        flex-direction: column;
+    }
+    .interface .titulo{
+        text-align: center;
+    }
+    .corpo .interface{
+        padding: 20px 8%;
+    }
+    .sobre img{
+        max-width: 99%;
+    }   
+    .corpo h1{
+        /* font-size: 2rem; */
+        text-align: center;
+    }
+    .corpo p{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+  
+    .skills .projetos{
+
+        max-width: 350px;
+        height: 250px;
+        padding: 30px 10px;
+        margin-top: 20px;
+        }
+    .projetos i{
+        font-size: 5rem; 
+    }
+    .projetos h3{
+        font-size: 1.3rem;
+        color: antiquewhite;
+        margin: 15px 0;
+    }
+    .projetos p{
+        text-align: center;
+    }
+    
+    .skills .flexivel {
+        padding: 10px 0%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
+    .footer .interface{
+        padding: 0 6%;
+    }  
+    .footer .flexivel{
+        gap: 30px;
+        flex-direction: row;
+
+    }
+    .footer .icon a{
+        font-size: .6rem;
+        padding: 0px 0px;
+        margin: 0px 0px;
+    }
+    .footer p {
+        padding: 10px 0;
+    }
+    .img_port{
+        border: 10%;
+        width: 260px;
+        height: 260px;
+        background-size: cover;
+        background-position: 100% 0%;
+        margin-top: 20px;
+        border-radius: 40px;
+        transition: 5s;
+        cursor: pointer;
+        position: relative;
+    }
+    .footer .logo_rodape img{
+        max-width:  60px;
+        height: 80px;
+        
+    }
+    
+ }
