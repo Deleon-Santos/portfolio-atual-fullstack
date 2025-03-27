@@ -43,6 +43,11 @@ main{
      font-size: 3rem;
      color: var(--color-strong);
  }
+ .redes__sociais i:hover{
+    transition: .5s ease-in-out ease-in;
+    transform: scale(1.05);
+    }
+
  .img_label img{
      border-radius: 15%;
      max-width: 350px;

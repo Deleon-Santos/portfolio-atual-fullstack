@@ -54,16 +54,7 @@
        
     
     }
-    /* .skills .flexivel{
-        display: flex;
-        
-        align-items: center;         
-        display: flex;
-        gap: 10px;
-       flex-direction: row;
-       grid-row: auto;
-       padding: 0px 0%;
-    } */
+    
     .skills .flexivel {
         padding: 10px 0%;
         display: grid;
@@ -96,7 +87,7 @@
         width: 50%;
         height: 100vh;
         backdrop-filter: blur(10px);
-        display: none; /* Inicialmente escondido */
+        display: none; 
         box-shadow: 0 0 1px 3px rgba(250, 235, 215, 0.157);
         transition:  10.5s ease-in-out ease-in;
     }
