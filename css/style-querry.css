@@ -263,7 +263,7 @@
     .footer .interface{
         padding: 0 6%;
     }  
-    .footer .flexivel{
+    /* .footer .flexivel{
         gap: 30px;
         flex-direction: row;
 
@@ -275,8 +275,8 @@
     }
     .footer p {
         padding: 10px 0;
-    }
-    .img_port{
+    } */
+    /* .img_port{
         border: 10%;
         width: 260px;
         height: 260px;
@@ -292,6 +292,6 @@
         max-width:  60px;
         height: 80px;
         
-    }
+    } */
     
  }

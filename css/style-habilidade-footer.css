@@ -28,6 +28,7 @@
 .skills .projetos{
     max-height: 100px;
     max-width: 150px;
+    cursor: default;  
 }
 /* inicio de seção footer */
 
@@ -37,12 +38,12 @@
 }
 
 .footer{
-    padding: 0 4%;
-    box-shadow: 0 0 10px 10px var(--color-shadown);
+    padding: 20px 4%;
+    box-shadow: 0 0 15px 5px var(--color-shadown);
 }
 
 footer .titulo{
-    padding-top: 40px;    
+    padding: 40px 0;    
 }
 
 .footer.icon > i:hover{
@@ -61,16 +62,26 @@ footer p{
 }
 
 .footer .flexivel{   
-    justify-content: space-between ;   
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center;
 }
-
+.flexivel__contatos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
 .esquerda{
     text-align: right;
 }
 
 .footer .logo_rodape img{
     width: 100px;
-    padding: 5px;
+    padding: 20px;
+    margin-bottom: 0px;
+    border-top: 40px;
     
 }
 .footer .logo_rodape{
