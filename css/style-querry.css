@@ -36,7 +36,7 @@
         margin-top: 20px;
     }
     .projetos i{
-        font-size: 3rem; 
+        font-size: 4rem; 
     }
     .projetos h3{
         font-size: 1.3rem;
@@ -47,11 +47,11 @@
         text-align: center;
     }
     .skills{
-        padding: 10px 4%;
+        padding: 0px 4%;
        
     
     }
-    .skills .flexivel{
+    /* .skills .flexivel{
         display: flex;
         
         align-items: center;         
@@ -60,14 +60,21 @@
        flex-direction: row;
        grid-row: auto;
        padding: 0px 0%;
+    } */
+    .skills .flexivel {
+        padding: 10px 0%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+
     }
-    
     .skills h3{
         font-size: 1rem;
     }
     .skills .projetos{
         min-width: 60px;
-        max-width: 100px;
+        max-width: 150px;
+        max-height: 150px;
         padding: 10px;
       
     }
@@ -219,6 +226,14 @@
         text-align: center;
     }
   
+    .projetos{
+        
+        max-width: 600px;
+        height: 250px;
+        padding: 30px 10px;
+        margin-top: 20px;
+        }
+
     .skills .projetos{
         
         max-width: 250px;
@@ -242,7 +257,7 @@
         padding: 10px 0%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 50px;
 
     }
     .footer .interface{
