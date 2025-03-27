@@ -20,6 +20,9 @@
     .interface .flexivel{
         gap: 50px;
     }
+    .corpo .flexivel{
+        gap: 20px;
+    }
     .label h1{
         font-size: 2rem;
     }     
@@ -214,16 +217,26 @@
     .corpo .interface{
         padding: 20px 8%;
     }
+    .corpo.img_label{
+        max-width:120%;
+        
+    }
     .sobre img{
         max-width: 100%;
     }   
     .corpo h1{
-        /* font-size: 2rem; */
         text-align: center;
     }
     .corpo p{
         font-size: 1.3rem;
         text-align: center;
+    }
+    .redes__sociais span{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        
+        
     }
   
     .projetos{
@@ -263,35 +276,19 @@
     .footer .interface{
         padding: 0 6%;
     }  
-    /* .footer .flexivel{
-        gap: 30px;
-        flex-direction: row;
-
-    }
+   
     .footer .icon a{
         font-size: .6rem;
         padding: 0px 0px;
         margin: 0px 0px;
     }
-    .footer p {
-        padding: 10px 0;
-    } */
-    /* .img_port{
-        border: 10%;
-        width: 260px;
-        height: 260px;
-        background-size: cover;
-        background-position: 100% 0%;
-        margin-top: 20px;
-        border-radius: 40px;
-        transition: 5s;
-        cursor: pointer;
-        position: relative;
-    }
-    .footer .logo_rodape img{
-        max-width:  60px;
-        height: 80px;
-        
-    } */
     
+    .flexivel__contatos{
+        
+        justify-content: space-between;
+        
+        gap: 20px;
+    }
+        
+ 
  }

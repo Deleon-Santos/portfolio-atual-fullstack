@@ -49,7 +49,7 @@ body{
 }
 
 .projetos{
-    max-width: 500px;
+    max-width: 600px;
     height: 250px;
     display: flex;
     flex-direction: column;

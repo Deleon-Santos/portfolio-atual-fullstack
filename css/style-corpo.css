@@ -11,6 +11,12 @@ main{
      justify-content: center;
      gap: 90px;
  }
+ .corpo .flexivel{
+    gap: 10px;
+    justify-content: space-between;
+    gap: 10px;
+    
+ }
  
  .label h1{
      font-size: 3rem;
@@ -26,12 +32,20 @@ main{
  .label p{
      color:var(--color-fonte-geral);
      font-size: 2rem;
-     margin-top:40px ;
+     margin: 40px 0  ;
  }
- 
+ .redes__sociais a{
+    display: inline;
+    margin-right: 20px;
+    padding-top: 20px;  
+ }
+ .redes__sociais i{
+     font-size: 3rem;
+     color: var(--color-strong);
+ }
  .img_label img{
      border-radius: 15%;
-     width: 350px;
+     max-width: 350px;
      position: relative;
      animation: flutuar 2s ease-in-out infinite alternate;
  }
