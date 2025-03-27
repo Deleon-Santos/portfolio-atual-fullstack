@@ -30,7 +30,7 @@
         flex-direction: column;
     }
     .projetos{
-        max-width: 200px;
+        max-width: 350px;
         height: 250px;
         padding: 20px;
         margin-top: 20px;
@@ -66,7 +66,7 @@
         font-size: 1rem;
     }
     .skills .projetos{
-        
+        min-width: 60px;
         max-width: 100px;
         padding: 10px;
       
@@ -76,7 +76,7 @@
         
     }
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 760px) {
     
     .menu_mobile {
         background-color: rgb(0, 0, 0);
@@ -119,11 +119,10 @@
     }
     
     .menu_hamburger_btn {
-        z-index: 15; /* Garante que o botão fique sempre acima do menu */
-        position: relative; /* Necessário para manter o z-index funcionando */
+        z-index: 15; 
+        position: relative; 
     }
     
-    /* Adicional de hover para melhorar a interação visual */
     .menu_hamburger_btn:hover {
         box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0.367);
     }
@@ -209,7 +208,7 @@
         padding: 20px 8%;
     }
     .sobre img{
-        max-width: 99%;
+        max-width: 100%;
     }   
     .corpo h1{
         /* font-size: 2rem; */
@@ -221,8 +220,8 @@
     }
   
     .skills .projetos{
-
-        max-width: 350px;
+        
+        max-width: 250px;
         height: 250px;
         padding: 30px 10px;
         margin-top: 20px;

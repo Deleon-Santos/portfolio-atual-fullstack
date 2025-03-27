@@ -49,16 +49,17 @@ body{
 }
 
 .projetos{
-    max-width: 300px;
+    max-width: 500px;
     height: 250px;
     display: flex;
     flex-direction: column;
     padding: 40px;
-   justify-content: center;
-   align-items: center;
-   margin-top: 40px;
-   border-radius: 25px;
-   box-shadow: 0 0 10px var(--color-shadown);
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px var(--color-shadown);
+    cursor: pointer;
 }
 
 .projetos:hover{

@@ -43,7 +43,7 @@ header a{
 .menu_desktop li a{
     text-decoration: none;
     color:var(--color-fonte-geral);
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0 20px;
     display: inline-block; 
     padding: 8px 13px;  
@@ -60,7 +60,7 @@ header a{
     transform: scale(1.05);
     color:var(--color-destaque);
     font-weight: 900;
-    text-decoration: underline;
+    text-decoration: underline var(--color-strong);
 }
 /*fim menu desktop e menu-burguer */
 
