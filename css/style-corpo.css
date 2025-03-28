@@ -17,7 +17,9 @@ main{
     gap: 10px;
     
  }
- 
+ .img_label{
+    max-width: 300px;
+ }
  .label h1{
      font-size: 3rem;
      text-align: left;
@@ -49,8 +51,8 @@ main{
     }
 
  .img_label img{
-     border-radius: 15%;
-     max-width: 350px;
+     border-radius: 10%;
+     max-width: 300px; 
      position: relative;
      animation: flutuar 2s ease-in-out infinite alternate;
  }
@@ -83,6 +85,7 @@ main{
  
  .sobre .img_sobre img{
      border-radius: 40px; 
+     max-width: 300px;
  }
  /*  */
  
