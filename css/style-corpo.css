@@ -13,9 +13,7 @@ main{
  }
  .corpo .flexivel{
     gap: 10px;
-    justify-content: space-between;
-    gap: 10px;
-    
+    justify-content: space-between;  
  }
  .img_label{
     max-width: 300px;
@@ -70,28 +68,22 @@ main{
      margin-top: 20px;
      padding: 40px 4%;
      display: flex;
-     margin-bottom: 40px;
-     
+     margin-bottom: 40px;   
  }
  
  .sobre .titulo{
      padding-bottom: 40px;
  }
  
- .sobre .flexivel a{
-     margin-top: 0px 8%;
-    
+ .sobre .flexivel {
+     gap: 4%;  
  }
  
  .sobre .img_sobre img{
      border-radius: 40px; 
-     max-width: 610px;
-     min-width: 300px;
+     width: 300px;
  }
- /*  */
- 
- 
- 
+
  .sobre abbr{
      cursor: pointer;
      color: var(--color-strong);
