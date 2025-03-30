@@ -36,9 +36,12 @@
 }
 
 .oculta .flexivel{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); /* Ajusta o número de colunas com base na largura da tela */
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px;
+    gap: 90px;
 }
 
 .oculta .interface{
@@ -142,7 +145,8 @@ button.hide-btn:hover {
 
 .portfolio{
     margin-bottom: 30px;
-    width: 310px;
+    max-width: 510px;
+    min-width: 310px;
     height:700px;
     
     display: flex;

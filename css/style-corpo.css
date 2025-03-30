@@ -85,7 +85,8 @@ main{
  
  .sobre .img_sobre img{
      border-radius: 40px; 
-     max-width: 300px;
+     max-width: 610px;
+     min-width: 300px;
  }
  /*  */
  
