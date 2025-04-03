@@ -91,14 +91,14 @@ link.addEventListener('click', function() {
 });
 
 // Intersection Observer para animações de seção
-const sections = document.querySelectorAll('.corpo, .sobre, .desenvolvimento, .skills');
-const observer = new IntersectionObserver((entries) => {
+const sections = document.querySelectorAll('.corpo, .label, .redes__sociais, .text_sobre, .sobre, .desenvolvimento, .projetos, .portfolio, .skills, .footer, .logo_rodape, .flexivel__contatos');
+const observer = new IntersectionObserver((entries) => { 
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('section-visible');
-        } else {
-            entry.target.classList.remove('section-visible');
-        }
+        }// } else {
+        //     entry.target.classList.remove('section-visible');
+        // }
     });
 });
 
