@@ -1,42 +1,43 @@
 /* Configurações gerais e tabela de cores*/
-html{
+html {
     scroll-behavior: smooth;
 }
-:root{
-    --body-background-color:black;
-    --header-background-color:black;
-    --footer-background-color:black;
-    --color-fonte-geral:rgb(104, 103, 102);
-    --color-destaque:rgba(250, 235, 215, 0.72);
-    --color-strong:aqua;
+
+:root {
+    --body-background-color: black;
+    --header-background-color: black;
+    --footer-background-color: black;
+    --color-fonte-geral: rgb(104, 103, 102);
+    --color-destaque: rgba(250, 235, 215, 0.72);
+    --color-strong: aqua;
     --color-shadown: rgba(250, 235, 215, 0.205);
-    --color-backgound-hover:aqua;
-    --color-fonte-hover:black;
-    --fonte-style-geral:'Courier New', Courier, monospace;
+    --color-backgound-hover: aqua;
+    --color-fonte-hover: black;
+    --fonte-style-geral: 'Courier New', Courier, monospace;
 }
 
-*{
+* {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-family: var(--fonte-style-geral);
     color: var(--color-fonte-geral);
 }
 
-body{
+body {
     background-color: var(--body-background-color);
     height: 100vh;
 }
 
-.interface{
-    max-width:1024px;
-    margin: 0 auto; 
+.interface {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-.flexivel{
+.flexivel {
     display: flex;
 }
 
-.titulo{
+.titulo {
     color: var(--color-destaque);
     font-size: 2rem;
     text-align: center;
@@ -44,11 +45,11 @@ body{
     margin-bottom: 40px;
 }
 
-.titulo strong{
-    color:var(--color-strong);
+.titulo strong {
+    color: var(--color-strong);
 }
 
-.projetos{
+.projetos {
     max-width: 600px;
     height: 250px;
     display: flex;
@@ -62,7 +63,7 @@ body{
     cursor: pointer;
 }
 
-.projetos:hover{
+.projetos:hover {
     box-shadow: 0 0 20px var(--color-shadown);
     transform: scale(1.05);
     transition: 0.5s ease-in-out ease-in;

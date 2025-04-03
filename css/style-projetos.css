@@ -1,26 +1,26 @@
-
 /* inicio da sessão desenvolvimento */
-.desenvolvimento{
+.desenvolvimento {
     padding: 40px 4%;
     display: flex;
     margin-bottom: 50PX;
 }
 
-.desenvolvimento .titulo{
+.desenvolvimento .titulo {
     margin-top: 20px;
 }
 
-.projetos i{
+.projetos i {
     font-size: 5rem;
-    color: var(--color-strong); 
+    color: var(--color-strong);
 }
 
-.projetos h3{
+.projetos h3 {
     font-size: 2rem;
     color: var(--color-destaque);
     margin: 15px 0;
 }
-.projetos p{
+
+.projetos p {
     text-align: center;
 }
 
@@ -29,52 +29,55 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 10.5s ease, opacity 10.5s ease; /* Suaviza a transição */
+    transition: max-height 10.5s ease, opacity 10.5s ease;
+    /* Suaviza a transição */
     justify-content: space-around;
     box-shadow: 0 0 40px 10px var(--color-shadown);
     padding: 80px 4%;
 }
 
-.oculta .flexivel{
+.oculta .flexivel {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); /* Ajusta o número de colunas com base na largura da tela */
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    /* Ajusta o número de colunas com base na largura da tela */
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 90px;
 }
 
-.oculta .interface{
-    padding: o 4%;  
+.oculta .interface {
+    padding: o 4%;
 }
 
 .oculta {
     display: none;
 }
 
-.oculta .titulo{
+.oculta .titulo {
     padding-bottom: 20px;
 }
 
 .oculta.show {
-    max-height: 2200vh; /* Define um valor grande o suficiente para conter o conteúdo */
+    max-height: 2200vh;
+    /* Define um valor grande o suficiente para conter o conteúdo */
     opacity: 1;
 }
 
 button.hide-btn {
-    color:  var(--color-fonte-geral);
+    color: var(--color-fonte-geral);
     background-color: var(--body-background-color);
     cursor: pointer;
     margin-top: 90px;
 }
 
 button.hide-btn:hover {
-    transition: .5s ease-in-out ease-in; 
+    transition: .5s ease-in-out ease-in;
     transform: scale(1.05);
-    color:var(--color-destaque); 
+    color: var(--color-destaque);
 }
 
-.img_port{
+.img_port {
     border: 10px;
     width: 380px;
     height: 260px;
@@ -86,13 +89,13 @@ button.hide-btn:hover {
     position: relative;
 }
 
-.img_port:hover{
+.img_port:hover {
     background-position: 100% 100%;
-    transition:  5s ease-in-out ease-in;
+    transition: 5s ease-in-out ease-in;
     transform: scale(1.02);
 }
 
-.over{
+.over {
     position: absolute;
     top: 0;
     left: 0;
@@ -100,7 +103,7 @@ button.hide-btn:hover {
     height: 100%;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.283);
-    color:var(--color-destaque);
+    color: var(--color-destaque);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,50 +111,52 @@ button.hide-btn:hover {
     font-size: 1.5rem;
     opacity: 0;
 }
-.over:hover{
+
+.over:hover {
     opacity: 1;
-    transition:  5s ease-in-out ease-in;
+    transition: 5s ease-in-out ease-in;
     transform: scale(1.02);
     box-shadow: 0 0 20px 10px var(--color-shadown);
 }
 
-.flexivel ul li{
-   list-style: none;
+.flexivel ul li {
+    list-style: none;
 }
 
-.over:hover a{
+.over:hover a {
     cursor: pointer;
     border: solid 2px var(--color-destaque);
-    padding: 10px 20px; 
+    padding: 10px 20px;
     border-radius: 10px;
     transform: scale(1.02);
     color: var(--color-destaque);
 }
 
-.icon a{
-  text-decoration: none;
-  color:  var(--color-destaque);
-  font-size: 1.1rem;
-  padding: 10px;
-}
-
-.icon i{font-size: 1.5rem;
+.icon a {
+    text-decoration: none;
+    color: var(--color-destaque);
+    font-size: 1.1rem;
     padding: 10px;
 }
 
-.icon:hover{
-    transition:  5s ease-in-out ease-in;
+.icon i {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.icon:hover {
+    transition: 5s ease-in-out ease-in;
     transform: scale(1.02);
-    color:var(--color-destaque);
+    color: var(--color-destaque);
     font-weight: 900;
 }
 
-.portfolio{
+.portfolio {
     margin-bottom: 30px;
     max-width: 510px;
     min-width: 310px;
-    height:700px;
-    
+    height: 700px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,7 +164,8 @@ button.hide-btn:hover {
     border-radius: 20px;
     background-color: var(--color-strong);
 }
-.desc-repositorio{
+
+.desc-repositorio {
     padding: 20px 10%;
     text-align: center;
     color: var(--color-fonte-geral);
@@ -169,11 +175,12 @@ button.hide-btn:hover {
 
 }
 
-.portfolio span{
+.portfolio span {
     position: relative;
     margin-bottom: 40px;
 }
-.repositorio{
+
+.repositorio {
     padding: 5px 40px;
     font-size: 1.2rem;
     font-weight: 900;
@@ -183,14 +190,14 @@ button.hide-btn:hover {
     cursor: pointer;
     text-decoration: none;
 }
+
 .repositorio:hover {
     transform: scale(1.03);
     transition: 0.5s ease-in-out ease-in;
     color: var(--color-destaque);
 }
 
-.portfolio h3{
+.portfolio h3 {
     margin-top: 30px;
 }
 
-/* Estilo para as seções após aparecerem */

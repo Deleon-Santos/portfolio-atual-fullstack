@@ -1,5 +1,5 @@
 /* inicio da sessão habilidades */
-.skills{
+.skills {
     padding: 20px 4%;
     margin-bottom: 80PX;
 }
@@ -9,60 +9,63 @@
     padding: 10px 0%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;  
+    gap: 50px;
 }
 
-.skills h3{
+.skills h3 {
     font-size: 1rem;
 }
 
-.skills .projetos{
+.skills .projetos {
     max-height: 100px;
     max-width: 150px;
-    cursor: default;  
+    cursor: default;
 }
+
 /* inicio de seção footer */
 
-.borda{
+.borda {
     border-top: 1 solid var(--color-shadown);
-    padding: 0px 4%;  
+    padding: 0px 4%;
 }
 
-.footer{
+.footer {
     padding: 20px 4%;
     box-shadow: 0 0 15px 5px var(--color-shadown);
 }
 
-footer .titulo{
-    padding: 40px 0;    
+footer .titulo {
+    padding: 40px 0;
 }
 
-.footer.icon > i:hover{
+.footer.icon>i:hover {
     font-weight: 800;
     color: var(--color-destaque)
 }
-.footer i{
+
+.footer i {
     color: var(--color-strong);
 
 }
 
-footer p{
+footer p {
     text-align: center;
     margin-top: 30px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: .8rem;
     padding: 20px 0px;
     margin-bottom: 20px;
 }
 
-.footer .flexivel{   
-    justify-content: center; 
-    flex-direction: column; 
+.footer .flexivel {
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    
+
 }
-.flexivel__contatos{
+
+.flexivel__contatos {
     max-width: 940px;
     display: flex;
     justify-content: space-between;
@@ -70,22 +73,23 @@ footer p{
     gap: 150px;
     margin-bottom: 20px;
 }
-.esquerda{
+
+.esquerda {
     text-align: right;
 }
 
-.footer .logo_rodape img{
+.footer .logo_rodape img {
     width: 100px;
     padding: 20px;
     margin-bottom: 0px;
     border-top: 40px;
-    
+
 }
-.footer .logo_rodape{
+
+.footer .logo_rodape {
     align-items: center;
     justify-content: center;
     border: 0px solid var(--color-strong);
     border-radius: 10px;
-    box-shadow:0 0 3px 2px rgba(0, 255, 255, 0.296);
+    box-shadow: 0 0 3px 2px rgba(0, 255, 255, 0.296);
 }
-

@@ -1,12 +1,12 @@
-
 /* Definição de variáveis no Body */
 
-header{
-    padding: 20px 0%; /*  estou fazendo um espaço na margen superior de 40px e 4% das laterais*/
-    margin: auto ;
-    align-items:center;
+header {
+    padding: 20px 0%;
+    /*  estou fazendo um espaço na margen superior de 40px e 4% das laterais*/
+    margin: auto;
+    align-items: center;
     margin-bottom: 40px;
-    background-color:var(--header-background-color);
+    background-color: var(--header-background-color);
 }
 
 header {
@@ -14,62 +14,65 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    transition: top 0.3s ease; /* Suaviza o movimento do header */
+    transition: top 0.3s ease;
+    /* Suaviza o movimento do header */
 }
 
-.logo p, .logo_burguer p{
+.logo p,
+.logo_burguer p {
     color: var(--color-strong);
     font-size: 3rem;
     display: flex;
-    cursor:default;
+    cursor: default;
 }
 
-.logo_burguer{
+.logo_burguer {
     display: none;
 }
 
- header .interface  {
+header .interface {
     padding: 0px 4%;
     display: flex;
-    align-items:center;
-    justify-content:space-between;  
+    align-items: center;
+    justify-content: space-between;
 }
 
-header a{
+header a {
     display: inline-block;
 }
 
 /* menu desktop e menu-burguer */
-.menu_desktop li a{
+.menu_desktop li a {
     text-decoration: none;
-    color:var(--color-fonte-geral);
+    color: var(--color-fonte-geral);
     font-size: 1.2rem;
     margin: 0 20px;
-    display: inline-block; 
-    padding: 8px 13px;  
+    display: inline-block;
+    padding: 8px 13px;
     border-radius: 25px;
 }
 
-.menu_mobile{
+.menu_mobile {
     display: none;
 }
 
-.menu_desktop li a:hover{
+.menu_desktop li a:hover {
     transition: .5s ease-in-out ease-in;
-    background-color:var(--color-backgound);
+    background-color: var(--color-backgound);
     transform: scale(1.05);
-    color:var(--color-destaque);
+    color: var(--color-destaque);
     font-weight: 900;
     text-decoration: underline var(--color-strong);
 }
+
 /*fim menu desktop e menu-burguer */
 
-header ul{
+header ul {
     list-style: none;
-    display: flex;  
+    display: flex;
 }
 
-.btn_contatos button{
+.btn_contatos button {
     font-size: 1.3rem;
     padding: 7PX 30PX;
     font-weight: 900;
@@ -81,11 +84,11 @@ header ul{
     border-color: var(--color-strong);
 }
 
-.btn_contatos button:hover{
+.btn_contatos button:hover {
     transition: .3s ease-in-out ease-in;
-    background-color:var(--color-backgound-hover);
+    background-color: var(--color-backgound-hover);
     transform: scale(1.05);
-    color:var(--color-fonte-hover); 
+    color: var(--color-fonte-hover);
 }
 
 .section-hidden {
@@ -98,8 +101,3 @@ header ul{
     opacity: 1;
     transform: translateY(0);
 }
-
-
-
-
-
