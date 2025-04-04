@@ -69,7 +69,12 @@
     .projetos p {
         text-align: center;
     }
-
+    
+    .img_port{
+        /* max-width: 360px; */
+        width: 280px;
+    }
+    
     .skills {
         padding: 0px 4%;
     }
@@ -284,6 +289,7 @@
     .projetos p {
         text-align: center;
     }
+    
 
     .skills .flexivel {
         padding: 10px 0%;
