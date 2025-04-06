@@ -1,3 +1,18 @@
+const nomeElemento = document.querySelector('.label strong');
+        const nome = "Deleon Santos!";
+        let i = 0;
+
+        function escreverNome() {
+            if (i < nome.length) {
+                nomeElemento.textContent += nome.charAt(i);
+                i++;
+                setTimeout(escreverNome, 200); // Ajuste o valor (em ms) para controlar a velocidade da escrita
+            }
+        }
+
+        // Inicia o efeito de escrita quando a página carrega
+        document.addEventListener('DOMContentLoaded', escreverNome);
+
 // Seleciona todos os itens de projeto clicáveis
 document.querySelectorAll('.projetos').forEach(item => {
     item.addEventListener('click', () => {  
