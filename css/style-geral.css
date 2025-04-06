@@ -24,11 +24,13 @@ html {
 }
 
 body {
-    background-color: var(--body-background-color);
+    
+    background-color: var(--body-background-color); 
     height: 100vh;
 }
 
 .interface {
+    
     max-width: 1024px;
     margin: 0 auto;
     
@@ -36,6 +38,7 @@ body {
 
 .flexivel {
     display: flex;
+    
 }
 
 .titulo {
@@ -68,4 +71,7 @@ body {
     box-shadow: 0 0 20px var(--color-shadown);
     transform: scale(1.05);
     transition: 0.5s ease-in-out ease-in;
+}
+.corpo{
+    background-image: linear-gradient(to bottom, var(--body-background-color), rgba(3, 63, 56, 0.55));
 }

@@ -91,7 +91,7 @@ link.addEventListener('click', function() {
 });
 
 // Intersection Observer para animações de seção
-const sections = document.querySelectorAll('.corpo, .label, .redes__sociais, .text_sobre, .sobre, .desenvolvimento, .projetos, .portfolio, .skills, .footer, .logo_rodape, .flexivel__contatos');
+const sections = document.querySelectorAll('.corpo, .label, .redes__sociais, .text_sobre, .sobre, .desenvolvimento, .sub-titulo, .projetos, .portfolio, .skills, .footer, .logomarca, .footer-col');
 const observer = new IntersectionObserver((entries) => { 
     entries.forEach(entry => {
         if (entry.isIntersecting) {

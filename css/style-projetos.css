@@ -71,16 +71,22 @@
 }
 
 button.hide-btn {
+    padding: 10px 15px;
+    border-radius: 15px;
     color: var(--color-fonte-geral);
     background-color: var(--body-background-color);
     cursor: pointer;
-    margin-top: 90px;
+    margin-top: 50px;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 button.hide-btn:hover {
     transition: .5s ease-in-out ease-in;
     transform: scale(1.05);
-    color: var(--color-destaque);
+    color: var(--color-strong);
+    border-color: var(--color-strong);
+
 }
 
 .img_port {
@@ -199,6 +205,7 @@ button.hide-btn:hover {
 
 .repositorio:hover {
     transform: scale(1.03);
+    background-color: rgba(52, 162, 127, 0.616);
     transition: 0.5s ease-in-out ease-in;
     color: var(--color-destaque);
 }
