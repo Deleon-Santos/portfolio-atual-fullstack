@@ -74,11 +74,11 @@ header ul {
 
 .btn_contatos button {
     font-size: 1.3rem;
-    padding: 7PX 30PX;
+    padding: 7px 30px;
     font-weight: 900;
     background-color: var(--footer-background-color);
     cursor: pointer;
-    border-radius: 25PX;
+    border-radius: 15PX;
     display: inline-block;
     color: var(--color-strong);
     border-color: var(--color-strong);

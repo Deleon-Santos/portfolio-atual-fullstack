@@ -40,11 +40,11 @@ O portfólio é organizado em várias seções:
 ## Habilidades Técnicas
 O portfólio demonstra minhas habilidades em:
 - **Desenvolvimento Web:** Criação de sites e aplicações responsivas usando **HTML5**, **CSS3**, **JavaScript**.
-- **Desenvolvimento em Python:** Foco em interfaces gráficas e backend com **PySimpleGUI** e integração com **bancos de dados**.
+- **Desenvolvimento em Python:** Foco automações, interfaces gráficas e backend com integração com **bancos de dados**.
 - **Infraestrutura e DevOps:** Compreensão de práticas ágeis e ferramentas de automação que facilitam o desenvolvimento e a entrega contínua de software.
 
 ## Filosofia e Estilo
-Valorizo o equilíbrio entre o trabalho e a vida pessoal. Acredito que a tecnologia deve melhorar nossas vidas e aproximar as pessoas. Isso se reflete no design funcional e amigável do portfólio.
+Valorizo o equilíbrio entre o trabalho e a vida pessoal. Acredito que a tecnologia deve melhorar nossas vidas e aproximar as pessoas
 
 ---
 
