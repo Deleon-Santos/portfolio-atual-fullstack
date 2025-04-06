@@ -7,7 +7,13 @@
 
 .desenvolvimento .titulo {
     margin-top: 20px;
+    
 }
+.desenvolvimento .sub-titulo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 .projetos i {
     font-size: 5rem;
