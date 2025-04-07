@@ -29,20 +29,18 @@ body {
     height: 100vh;
 }
 
-.interface {
-    
+.interface { 
     max-width: 1024px;
     margin: 0 auto;
-    
 }
 
 .flexivel {
     display: flex;
-    
 }
 
 .titulo {
     color: var(--color-destaque);
+    text-shadow: 2px 2px 2px rgba(207, 218, 218, 0.575) ;
     font-size: 2rem;
     text-align: center;
     margin-top: 20px;
@@ -63,12 +61,12 @@ body {
     align-items: center;
     margin-top: 40px;
     border-radius: 25px;
-    box-shadow: 0 0 10px var(--color-shadown);
+    box-shadow: inset -3px -3px 10px rgba(40, 40, 40, 0.381), inset 2px 2px 5px rgba(255, 255, 255, 0.3); 
     cursor: pointer;
 }
 
 .projetos:hover {
-    box-shadow: 0 0 20px var(--color-shadown);
+    /* box-shadow: 0 0 20px var(--color-shadown); */
     transform: scale(1.05);
     transition: 0.5s ease-in-out ease-in;
 }

@@ -1,9 +1,6 @@
-main {
-    margin-top: 0px;
-}
 
 .corpo {
-    padding: 150px 4%
+    padding: 200px 4%
 }
 
 .interface .flexivel {
@@ -17,9 +14,6 @@ main {
     justify-content: space-between;
 }
 
-.img_label {
-    max-width: 300px;
-}
 
 .label h1 {
     font-size: 3rem;
@@ -30,6 +24,7 @@ main {
 .label strong {
     font-weight: 900;
     color: var(--color-strong);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
 .label p {
@@ -54,29 +49,29 @@ main {
     transform: scale(1.05);
 }
 
+.img_label {
+    max-width: 300px;
+}
+
 .img_label img {
     border-radius: 10%;
     max-width: 300px;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
+
 .label strong {
     overflow: hidden;
     white-space: nowrap;
-    border-right: .15em solid orange;
-    animation:blink-caret .75s step-end infinite;
-      
-      
+    border-right: .15em solid rgb(19, 139, 129);
+    animation:blink-caret .75s step-end infinite;   
   }
-  
-  
-  
+   
   /* Animação para o cursor piscando */
-  @keyframes blink-caret {
+@keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: var(--color-strong) }
-  }
-
+}
 
 @keyframes flutuar {
     0% {
