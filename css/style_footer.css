@@ -121,7 +121,55 @@ footer .titulo {
     color: var(--color-strong);
 
 }
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color:transparent;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  }
 
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color:var(--color-fonte-geral);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--color-fonte-geral);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: vertical;
+    background-color: transparent;
+  }
+
+  button {
+    background-color:transparent;
+    color:var(--color-fonte-geral);
+    padding: 12px 20px;
+    border: solid 2px var(--color-destaque);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color:var(--color-shadown);
+    transition: 0.3s ease-in-out;
+    transform: scaleX(1.01);
+    color: var(--color-destaque);
+    
+  }
 
 /* @media (max-width: 900px) {
     .footer .interface {
