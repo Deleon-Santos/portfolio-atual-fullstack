@@ -12,7 +12,7 @@ function escreverNome() {
 
 document.addEventListener('DOMContentLoaded', escreverNome);
 
-document.querySelectorAll('.card-projetos').forEach(item => {
+document.querySelectorAll('.projetos').forEach(item => {
     item.addEventListener('click', () => {
         const targetSection = document.getElementById(item.getAttribute('data-target'));
         document.querySelector('.desenvolvimento').style.display = 'none';
@@ -28,7 +28,7 @@ document.querySelectorAll('.hide-btn').forEach(button => {
     });
 });
 
-document.querySelectorAll('.card-projetos').forEach(item => {
+document.querySelectorAll('.projetos').forEach(item => {
     item.addEventListener('click', () => {
         const targetSection = document.getElementById(item.getAttribute('data-target'));
         document.querySelector('.desenvolvimento').style.display = 'none';

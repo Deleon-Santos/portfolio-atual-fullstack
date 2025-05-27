@@ -141,7 +141,8 @@ button.hide-btn:hover {
     padding: 10px 20px;
     border-radius: 10px;
     transform: scale(1.02);
-    color: var(--color-destaque);
+    color: var(--color-fonte-geral);
+    background-color: rgba(127, 255, 212, 0.724);
 }
 
 .icon a {
