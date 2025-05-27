@@ -1,39 +1,35 @@
 const nomeElemento = document.querySelector('.label strong');
-        const nome = "Deleon Santos!";
-        let i = 0;
+const nome = "Deleon Santos!";
+let i = 0;
 
-        function escreverNome() {
-            if (i < nome.length) {
-                nomeElemento.textContent += nome.charAt(i);
-                i++;
-                setTimeout(escreverNome, 200); // Ajuste o valor (em ms) para controlar a velocidade da escrita
-            }
-        }
+function escreverNome() {
+    if (i < nome.length) {
+        nomeElemento.textContent += nome.charAt(i);
+        i++;
+        setTimeout(escreverNome, 200);
+    }
+}
 
-        // Inicia o efeito de escrita quando a página carrega
-        document.addEventListener('DOMContentLoaded', escreverNome);
+document.addEventListener('DOMContentLoaded', escreverNome);
 
-// Seleciona todos os itens de projeto clicáveis
-document.querySelectorAll('.projetos').forEach(item => {
-    item.addEventListener('click', () => {  
+document.querySelectorAll('.card-projetos').forEach(item => {
+    item.addEventListener('click', () => {
         const targetSection = document.getElementById(item.getAttribute('data-target'));
         document.querySelector('.desenvolvimento').style.display = 'none';
         targetSection.style.display = 'block';
     });
 });
 
-// Adiciona evento para esconder as seções quando o botão "Esconder" for clicado
 document.querySelectorAll('.hide-btn').forEach(button => {
     button.addEventListener('click', (event) => {
-        const section = event.target.closest('section');  
+        const section = event.target.closest('section');
         section.style.display = 'none';
- document.querySelector('.desenvolvimento').style.display = 'block';
+        document.querySelector('.desenvolvimento').style.display = 'block';
     });
 });
 
-// Seleciona todos os itens de projeto clicáveis
-document.querySelectorAll('.projetos').forEach(item => {
-    item.addEventListener('click', () => {      
+document.querySelectorAll('.card-projetos').forEach(item => {
+    item.addEventListener('click', () => {
         const targetSection = document.getElementById(item.getAttribute('data-target'));
         document.querySelector('.desenvolvimento').style.display = 'none';
 
@@ -45,15 +41,12 @@ document.querySelectorAll('.projetos').forEach(item => {
     });
 });
 
-// Adiciona evento para esconder as seções quando o botão "Esconder" for clicado
 document.querySelectorAll('.hide-btn').forEach(button => {
     button.addEventListener('click', (event) => {
         const section = event.target.closest('section');
-        
-        
+
         section.classList.remove('show');
-        
-        // Mostra novamente a seção desenvolvimento com um pequeno delay para suavidade
+
         setTimeout(() => {
             document.querySelector('.desenvolvimento').style.display = 'block';
         }, 1500); // Espera a transição de 0.5s
@@ -69,10 +62,10 @@ window.addEventListener('scroll', () => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-        
-        header.style.top = '-100px'; 
+
+        header.style.top = '-100px';
     } else if (scrollTop === 0) {
-        
+
         header.style.top = '0';
     }
 
@@ -82,7 +75,7 @@ window.addEventListener('scroll', () => {
 // Função para detectar o movimento do mouse
 window.addEventListener('mousemove', (event) => {
     if (event.clientY < 50) {
-        
+
         header.style.top = '0';
     }
 });
@@ -92,22 +85,22 @@ const menuMobile = document.querySelector('.menu_mobile');
 const menuLinks = document.querySelectorAll('.menu_mobile a');
 
 // Adiciona um evento de clique ao botão hamburguer para abrir/fechar o menu
-menuHamburger.addEventListener('click', function() {
-menuHamburger.classList.toggle('active');
-menuMobile.classList.toggle('active');
+menuHamburger.addEventListener('click', function () {
+    menuHamburger.classList.toggle('active');
+    menuMobile.classList.toggle('active');
 });
 
 // Adiciona eventos de clique a cada link do menu mobile para fechar o menu
 menuLinks.forEach(link => {
-link.addEventListener('click', function() {
-    menuHamburger.classList.remove('active'); // Remove a classe 'active' do botão
-    menuMobile.classList.remove('active'); // Remove a classe 'active' do menu mobile
-});
+    link.addEventListener('click', function () {
+        menuHamburger.classList.remove('active'); // Remove a classe 'active' do botão
+        menuMobile.classList.remove('active'); // Remove a classe 'active' do menu mobile
+    });
 });
 
 // Intersection Observer para animações de seção
 const sections = document.querySelectorAll('.corpo, .label, .redes__sociais, .text_sobre, .sobre, .desenvolvimento, .sub-titulo, .projetos, .portfolio, .skills, .footer, .logomarca, .footer-col');
-const observer = new IntersectionObserver((entries) => { 
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('section-visible');
