@@ -95,7 +95,7 @@ button.hide-btn:hover {
     height: 260px;
     background-size: cover;
     background-position: 100% 0%;
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 20px;
     transition: 5s;
     position: relative;
@@ -189,8 +189,19 @@ button.hide-btn:hover {
 }
 
 .portfolio span {
+    
+    
     position: relative;
     margin-bottom: 40px;
+}
+.used-skill {
+    position: relative;
+    padding: 20px;
+    
+}
+.used-skill i {
+    padding: 0 10px;
+    font-size: 1.5rem;
 }
 
 .repositorio {
@@ -212,6 +223,6 @@ button.hide-btn:hover {
 }
 
 .portfolio h3 {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
