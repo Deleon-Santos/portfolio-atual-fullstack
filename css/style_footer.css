@@ -174,22 +174,14 @@ form {
     
   }
 
-/* @media (max-width: 900px) {
-    .footer .interface {
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
-
+@media (max-width: 900px) {
+    .footer ul p {
+       
+        margin-bottom: 0px;
     }
-    .logo{
-        grid-column: span 3;
-        text-align: center;
     
-    }
-    .logo p{
-        text-align: center;
-        align-items: center;
-    }
-} */
+
+} 
 
 
 
@@ -200,7 +192,9 @@ form {
         align-items: center;
         text-align: center;
     }
-
+    .footer .menu_desktop{
+        display: block;
+    }
     .footer-col {
         width: 100%;
         min-width: auto;
@@ -211,10 +205,11 @@ form {
     .footer-col h3 {
         border-bottom: none;
     }
-    .footer p {
+    .footer ul p {
         align-items: flex-start;
         font-size: 1rem;
         color: var(--color-fonte-geral);
+        margin-bottom: 0px;
     }
     .esquerda {
         text-align: center;
