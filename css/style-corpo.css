@@ -1,6 +1,7 @@
 
 .corpo {
-    padding: 200px 4%
+    padding: 200px 4%;
+    padding-bottom: 40px;
 }
 
 .interface .flexivel {
@@ -67,7 +68,35 @@
     animation:blink-caret .75s step-end infinite;   
   }
    
-  /* Animação para o cursor piscando */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent; 
+  padding-top: 100px;
+}
+
+.itens-tecnologias {
+  display: flex;
+  gap: 80px;
+  animation: slide-infinite 50s linear infinite;
+  width: fit-content;
+  /* animation: running; */
+}
+
+.tech i{
+  font-size: 3rem;
+  color:var(--color-destaque);
+}
+
+@keyframes slide-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: var(--color-strong) }

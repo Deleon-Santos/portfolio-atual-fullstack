@@ -50,6 +50,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 90px;
+   
 }
 
 .oculta .interface {
@@ -58,6 +59,7 @@
 
 .oculta {
     display: none;
+    
 }
 
 .oculta .titulo {
@@ -65,7 +67,8 @@
 }
 
 .oculta.show {
-    max-height: 2200vh;
+   
+    max-height: 2200vh; 
     /* Define um valor grande o suficiente para conter o conteúdo */
     opacity: 1;
 }
