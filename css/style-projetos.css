@@ -82,11 +82,13 @@ button.hide-btn {
     margin-top: 50px;
     font-size: 1rem;
     font-weight: 600;
+    transform: scale(1);
+    transition:all .8s ease-in-out ease-in;
 }
 
 button.hide-btn:hover {
-    transition: .5s ease-in-out ease-in;
-    transform: scale(1.05);
+    transition:all .5s ease-in-out ease-in;
+    transform: scale(1.01);
     color: var(--color-strong);
     border-color: var(--color-strong);
 
@@ -220,9 +222,9 @@ button.hide-btn:hover {
 
 .repositorio:hover {
     transform: scale(1.03);
-    background-color: rgba(52, 162, 127, 0.616);
+    background-color: rgba(250, 250, 250, 0.616);
     transition: 0.5s ease-in-out ease-in;
-    color: var(--color-destaque);
+    color: var(--color-fonte-geral);
 }
 
 .portfolio h3 {

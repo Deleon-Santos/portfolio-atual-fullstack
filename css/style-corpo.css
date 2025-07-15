@@ -78,14 +78,14 @@
 .itens-tecnologias {
   display: flex;
   gap: 80px;
-  animation: slide-infinite 50s linear infinite;
+  animation: slide-infinite 40s linear infinite;
   width: fit-content;
   /* animation: running; */
 }
 
 .tech i{
   font-size: 3rem;
-  color:var(--color-destaque);
+  color:var(--color-strong);
 }
 
 @keyframes slide-infinite {
