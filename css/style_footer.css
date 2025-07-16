@@ -17,6 +17,7 @@
 .logo p{
     text-align: center;
     align-items: center;
+    font-size: 1.8rem;
 }
 
 
@@ -204,18 +205,25 @@ form {
 
     .footer-col h3 {
         border-bottom: none;
+        font-size: 1.8rem;
     }
     .footer ul p {
         align-items: flex-start;
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: var(--color-fonte-geral);
         margin-bottom: 0px;
+    }
+    .footer-col p {
+        font-size: 1.2rem;
     }
     .esquerda {
         text-align: center;
     }
 
     .esquerda .icon a {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+    .footer-col .menu_desktop a {
+        font-size: 1.2rem;
     }
 }

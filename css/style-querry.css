@@ -106,23 +106,31 @@
 
 @media screen and (max-width: 760px) {
 
+
     .menu_mobile {
-        background-color: rgb(0, 0, 0);
-        position: absolute;
-        top: 67px;
-        right: 0px;
-        width: 50%;
-        height: 100vh;
-        backdrop-filter: blur(10px);
-        display: none;
-        box-shadow: 0 0 1px 3px rgba(250, 235, 215, 0.157);
-        transition: 10.5s ease-in-out ease-in;
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    width: 250px; /* ajuste conforme necessário */
+    height: 100%;
+    background-color: #000; /* cor de fundo opcional */
+    transform: translateX(100%);
+    transition:all transform 0.5s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0;
+    z-index: 10;
+    }
+
+    .menu_mobile.active {
+        display: block;
+        transform: translateX(0);
+        opacity: 1;
     }
 
     .menu_mobile a:hover {
-        transition: .5s ease-in-out ease-in;
-        background-color: aqua;
-        transform: scale(1.05);
+        transition: all .5s ease-in-out ease-in;
+
+        transform: scale(1.01);
         color: black;
     }
 
@@ -140,13 +148,13 @@
 
     /* Botão do menu hamburguer */
     .menu_hamburger_btn {
-        width: 28px;
-        height: 18px;
+        width: 30px;
+        height: 22px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 2px solid aqua;
+        /* border: 2px solid aqua; */
         padding: 4px;
     }
 
@@ -156,7 +164,10 @@
     }
 
     .menu_hamburger_btn:hover {
-        box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0.367);
+        transition: all 0.3s ease;
+        transform: scale(1.05);
+        font-weight: 900;
+        /* box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0.367); */
     }
 
     /* Linhas do botão hamburguer */
@@ -167,13 +178,9 @@
         transition: all 0.3s ease;
     }
 
-    .menu_hamburger_btn:hover {
-
-        box-sizing: 0 0 10px 5px rgba(0, 255, 255, 0.367);
-    }
 
     .menu_hamburger_btn.active .line-1 {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(7px, 7px);
     }
 
     .menu_hamburger_btn.active .line-2 {
@@ -181,29 +188,33 @@
     }
 
     .menu_hamburger_btn.active .line-3 {
-        transform: rotate(-45deg) translate(6px, -6px);
+        transform: rotate(-45deg) translate(7px, -7px);
     }
 
-    .menu_mobile.active {
+    /* .menu_mobile.active {
         display: block;
-    }
+    } */
 
     .menu_mobile ul {
         display: block;
-        text-align: center;
-        padding-right: 12%;
+       
+        
     }
 
     .menu_mobile ul a {
         text-decoration: none;
-        padding: 20px 12%;
-        font-size: 1.3rem;
+        padding: 15px 10%;
+        font-size: 1.5rem;
         cursor: pointer;
         display: block;
     }
 
-    .menu_mobile ul li:hover {
-        background-color: aqua;
+    .menu_mobile ul li a:hover {
+        /* ckground-color: transparent;ba */
+        color: var(--color-strong);
+        
+        transform: scale(1.05);
+        transition: all .5s ease-in-out ease-in;
     }
 
     header .interface {
@@ -312,4 +323,6 @@
         align-items: center;
         gap: 50px;
     } 
+
+    
 }
