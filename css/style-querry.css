@@ -191,14 +191,8 @@
         transform: rotate(-45deg) translate(7px, -7px);
     }
 
-    /* .menu_mobile.active {
-        display: block;
-    } */
-
     .menu_mobile ul {
-        display: block;
-       
-        
+        display: block;    
     }
 
     .menu_mobile ul a {
